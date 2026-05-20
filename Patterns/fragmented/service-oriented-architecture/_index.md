@@ -12,10 +12,10 @@ source: https://github.com/denyspoltorak/metapatterns/wiki/Service-Oriented-Arch
 ```mermaid
 graph LR
     ESB[Enterprise Service Bus]
-    SA[Service A] --> ESB
-    SB[Service B] --> ESB
-    ESB --> SC[Service C]
-    ESB --> SD[Service D]
+    SA[Service A] <--> ESB
+    SB[Service B] <--> ESB
+    ESB <--> SC[Service C]
+    ESB <--> SD[Service D]
 ```
 
 ## Summary

@@ -11,10 +11,9 @@ source: https://github.com/denyspoltorak/metapatterns/wiki/Microkernel
 
 ```mermaid
 graph TD
-    K[Kernel / Core]
-    K --> P1[Plugin A]
-    K --> P2[Plugin B]
-    K --> P3[Plugin C]
+    P1[Plugin A] --> K[Kernel / Core]
+    P2[Plugin B] --> K
+    P3[Plugin C] --> K
 ```
 
 ## Summary

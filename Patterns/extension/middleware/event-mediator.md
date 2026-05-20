@@ -11,11 +11,19 @@ source: https://github.com/denyspoltorak/metapatterns/wiki/Middleware
 ## Diagram
 
 ```mermaid
-graph TD
-    E[Incoming Event] --> M[Mediator]
-    M --> SA[Service A]
-    M --> SB[Service B]
-    M --> SC[Service C]
+sequenceDiagram
+    participant E as Event Source
+    participant M as Mediator
+    participant SA as Service A
+    participant SB as Service B
+    participant SC as Service C
+    E->>M: incoming event
+    M->>SA: step 1
+    SA-->>M: ok
+    M->>SB: step 2
+    SB-->>M: ok
+    M->>SC: step 3
+    SC-->>M: ok
 ```
 
 ## Summary

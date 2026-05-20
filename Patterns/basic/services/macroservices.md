@@ -13,8 +13,16 @@ source: https://github.com/denyspoltorak/metapatterns/wiki/Services
 ```mermaid
 graph TD
     C[Client]
-    C --> SA[Service A]
-    C --> SB[Service B]
+    C --> SA
+    C --> SB
+    subgraph SA[Service A]
+        MA1[Module A1]
+        MA2[Module A2]
+    end
+    subgraph SB[Service B]
+        MB1[Module B1]
+        MB2[Module B2]
+    end
     SA --> DA[(DB A)]
     SB --> DB[(DB B)]
 ```

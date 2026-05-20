@@ -11,10 +11,19 @@ source: https://github.com/denyspoltorak/metapatterns/wiki/Layered-Services
 
 ```mermaid
 graph TD
-    API[API Layer]
-    BL[Business Layer]
-    DL[Data Layer]
-    API --> BL --> DL
+    subgraph Service A
+        A_API[API Layer]
+        A_BL[Business Layer]
+        A_DL[Data Layer]
+        A_API --> A_BL --> A_DL
+    end
+    subgraph Service B
+        B_API[API Layer]
+        B_BL[Business Layer]
+        B_DL[Data Layer]
+        B_API --> B_BL --> B_DL
+    end
+    A_API --> B_API
 ```
 
 ## Summary

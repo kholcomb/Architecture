@@ -15,8 +15,8 @@ graph LR
     API[API Adapter] --> Port1
     Port1 --> Core[Domain Core]
     Core --> Port2[Output Port]
-    Port2 --> DB[DB Adapter]
-    Port2 --> Ext[External Adapter]
+    DB[DB Adapter] --> Port2
+    Ext[External Adapter] --> Port2
 ```
 
 ## Summary

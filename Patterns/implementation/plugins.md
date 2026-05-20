@@ -11,10 +11,9 @@ source: https://github.com/denyspoltorak/metapatterns/wiki/Plugins
 
 ```mermaid
 graph TD
-    C[Core System]
-    C --> P1[Plugin A]
-    C --> P2[Plugin B]
-    C --> P3[Plugin C]
+    P1[Plugin A] --> C[Core System]
+    P2[Plugin B] --> C
+    P3[Plugin C] --> C
 ```
 
 ## Summary

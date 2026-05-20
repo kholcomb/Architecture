@@ -14,9 +14,19 @@ source: https://github.com/denyspoltorak/metapatterns/wiki/Polyglot-Persistence
 graph TD
     OPS[Operational DBs]
     ETL[ETL Pipeline]
-    DW[(Dimensional Model)]
+    subgraph Dimensional Model
+        FACT[(Fact Table)]
+        DIM1[(Dimension)]
+        DIM2[(Dimension)]
+        FACT --- DIM1
+        FACT --- DIM2
+    end
     BI[BI / Reporting]
-    OPS --> ETL --> DW --> BI
+    OPS --> ETL
+    ETL --> FACT
+    ETL --> DIM1
+    ETL --> DIM2
+    FACT --> BI
 ```
 
 ## Summary

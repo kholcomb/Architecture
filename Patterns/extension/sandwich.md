@@ -18,8 +18,8 @@ graph TD
     DB[Domain Service B]
     PA --> I
     PB --> I
-    I --> DA
-    I --> DB
+    DA --> I
+    DB --> I
 ```
 
 ## Summary

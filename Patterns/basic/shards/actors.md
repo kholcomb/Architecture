@@ -17,6 +17,8 @@ graph LR
     A3[Actor 3]
     A1 -->|msg| A2
     A2 -->|msg| A3
+    A3 -->|msg| A1
+    A2 -->|msg| A1
 ```
 
 ## Summary

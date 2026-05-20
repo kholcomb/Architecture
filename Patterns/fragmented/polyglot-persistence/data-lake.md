@@ -16,13 +16,15 @@ graph TD
     SB[Source B]
     SC[Source C]
     DL[(Data Lake)]
+    PROC[Processing Layer]
     AN[Analytics]
     ML[ML / Data Science]
     SA --> DL
     SB --> DL
     SC --> DL
     DL --> AN
-    DL --> ML
+    DL --> PROC
+    PROC --> ML
 ```
 
 ## Summary

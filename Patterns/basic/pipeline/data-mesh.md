@@ -21,8 +21,14 @@ graph TD
     subgraph Domain C
         PC[Data Product C]
     end
-    PA --- PB
-    PB --- PC
+    GV[Federated Governance]
+    PA --> GV
+    PB --> GV
+    PC --> GV
+    CON[Consumer]
+    PA --> CON
+    PB --> CON
+    PC --> CON
 ```
 
 ## Summary
