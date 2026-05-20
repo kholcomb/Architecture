@@ -7,6 +7,17 @@ related: [monolith, layers, pipeline, shards, cells]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Services
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    C[Client]
+    C --> SA[Service A]
+    C --> SB[Service B]
+    SA --> DA[(DB A)]
+    SB --> DB[(DB B)]
+```
+
 ## Summary
 Divides a large codebase into independently deployable components, one per subdomain. Each service is owned by a dedicated team, can use its own technology stack, and scales independently. The guiding principle is "Divide and conquer — gain flexibility through decoupling subdomains." The pattern is well-suited to large organizations but introduces significant distributed-systems complexity: global use cases become hard to trace, latency increases at service boundaries, and changing the domain structure after the fact is nearly impossible.
 

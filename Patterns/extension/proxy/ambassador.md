@@ -8,6 +8,16 @@ related: [sidecar, service-mesh, api-gateway, load-balancer, proxy]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    subgraph Service Pod
+        A[App] --> AMB[Ambassador]
+    end
+    AMB --> ES[External Service]
+```
+
 ## Summary
 A specialized sidecar that acts as an outbound proxy for a service, handling all egress calls on that service's behalf. The ambassador manages retries, circuit breaking, timeouts, and protocol translation for all outbound requests — the application simply calls the ambassador on localhost and the ambassador handles the complexities of calling remote services reliably.
 

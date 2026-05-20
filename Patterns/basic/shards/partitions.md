@@ -8,6 +8,16 @@ related: [cells, stateless-pool, multitenancy, consistent-hashing]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shards
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    PR[Proxy / Router]
+    PR --> P1[(Partition A-M)]
+    PR --> P2[(Partition N-Z)]
+    PR --> P3[(Partition ...)]
+```
+
 ## Summary
 Data is divided into non-overlapping horizontal slices distributed across multiple nodes. Each partition owns an exclusive key range (or a hash bucket) and is the sole authority for reads and writes on those keys. Queries are routed to the owning partition, enabling the dataset and request throughput to grow linearly by adding more nodes.
 

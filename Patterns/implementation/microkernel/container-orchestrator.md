@@ -8,6 +8,17 @@ related: [microkernel, software-framework, plugins, space-based-architecture]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Microkernel
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    O[Orchestrator]
+    O --> C1[Container A]
+    O --> C2[Container B]
+    O --> C3[Container C]
+    O --> N[Node Pool]
+```
+
 ## Summary
 A Container Orchestrator is a microkernel that manages the full lifecycle of containerized workloads: scheduling containers onto nodes, scaling them up or down, handling networking and service discovery, managing persistent storage, and restarting failed instances. The orchestrator's core is minimal and stable; user workloads are effectively plug-ins that declare their resource requirements and the orchestrator satisfies them. Kubernetes is the canonical example; others include Nomad and Amazon ECS.
 

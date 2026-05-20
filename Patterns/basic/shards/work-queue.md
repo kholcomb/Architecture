@@ -8,6 +8,15 @@ related: [stateless-pool, lambdas, partitions, pub-sub]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shards
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    P[Producer] --> Q[/Queue/]
+    Q --> W1[Worker 1]
+    Q --> W2[Worker 2]
+```
+
 ## Summary
 A pool of identical worker instances pulls tasks from a shared, durable queue. Workers are stateless and interchangeable — any worker can execute any task. The queue acts as a buffer that absorbs bursts, provides backpressure, and guarantees at-least-once delivery, decoupling task producers from task executors.
 

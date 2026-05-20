@@ -7,6 +7,17 @@ related: [monolith, services, hexagonal, pipeline]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Layers
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    P[Presentation]
+    B[Business Logic]
+    D[Data Access]
+    DB[(Database)]
+    P --> B --> D --> DB
+```
+
 ## Summary
 Organizes a system into horizontal tiers of abstraction — one component per level of abstractness. Each layer depends only on the layer below it, keeping business logic encapsulated and implementation details separate from higher-level concerns. The guiding principle: "Don't mix the business logic and implementation details." It is the natural first step for adding structure to a monolith, and the dominant pattern for small-to-medium codebases.
 

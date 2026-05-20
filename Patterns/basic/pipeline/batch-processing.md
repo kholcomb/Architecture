@@ -8,6 +8,13 @@ related: [stream-processing, pipes-and-filters, workflow-system, data-mesh]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Pipeline
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    S[(Source)] --> BC[Batch Collector] --> P[Processor] --> O[(Output)]
+```
+
 ## Summary
 Data is accumulated over a time interval and then processed as a discrete, bounded job. Jobs are typically scheduled (hourly, nightly, weekly) and operate on a complete snapshot or incremental slice of data. Batch processing is optimized for high throughput rather than low latency: large volumes of records are processed efficiently using sequential I/O, bulk operations, and distributed parallelism. It is the foundational pattern for ETL pipelines, periodic reporting, and bulk data transformations.
 

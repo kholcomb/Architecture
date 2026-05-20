@@ -8,6 +8,16 @@ related: [reverse-proxy, api-gateway, service-mesh, edge-service, proxy]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    C[Client] --> LB[Load Balancer]
+    LB --> I1[Instance A]
+    LB --> I2[Instance B]
+    LB --> I3[Instance C]
+```
+
 ## Summary
 A proxy that distributes incoming requests across a pool of backend instances using a configured algorithm (round-robin, least-connections, IP hash, etc.). Ensures no single instance is overwhelmed, provides automatic failover when instances become unavailable, and enables horizontal scaling by adding or removing instances from the pool transparently.
 

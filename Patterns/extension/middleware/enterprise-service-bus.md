@@ -8,6 +8,16 @@ related: [message-broker, event-mediator, middleware, api-gateway, anticorruptio
 source: https://github.com/denyspoltorak/metapatterns/wiki/Middleware
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    S1[System A] --> ESB[/ESB/]
+    S2[System B] --> ESB
+    ESB --> S3[System C]
+    ESB --> S4[System D]
+```
+
 ## Summary
 A centralized middleware platform that provides message routing, data transformation, protocol mediation, and orchestration across enterprise systems. The ESB acts as a universal adapter and coordinator: it receives messages in various formats and protocols, transforms them to the target format, routes them to the correct system, and can orchestrate multi-step integration workflows. Evolved from the Middleware metapattern to address heterogeneous enterprise integration needs.
 

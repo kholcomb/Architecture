@@ -8,6 +8,17 @@ related: [ambassador, service-mesh, api-gateway, proxy]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    subgraph Pod
+        A[App Container] --- SC[Sidecar Container]
+    end
+    A --> SVC[Downstream Service]
+    SC --> LOG[Log Sink]
+```
+
 ## Summary
 A helper container or process co-deployed alongside the main service that extends its capabilities — such as logging, configuration management, secret injection, or acting as a local proxy — without modifying the service code. The sidecar shares the same lifecycle and network namespace as the main service, enabling transparent augmentation of the service's behavior.
 

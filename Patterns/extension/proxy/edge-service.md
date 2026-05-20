@@ -8,6 +8,15 @@ related: [reverse-proxy, caching-layer, load-balancer, api-gateway, proxy]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    U[User] --> E[Edge / PoP]
+    E -->|cache hit| U
+    E -->|cache miss| OR[Origin]
+```
+
 ## Summary
 A proxy deployed at the network edge — within a CDN point of presence (PoP) geographically close to users — that serves content with minimal latency by avoiding a round-trip to the origin. Handles TLS termination, static asset caching, DDoS protection, and routing at the edge. Dynamic requests can be forwarded to the nearest origin, while static or cacheable responses are served directly from the edge node.
 

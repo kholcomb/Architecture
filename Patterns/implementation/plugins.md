@@ -7,6 +7,16 @@ related: [microkernel, hexagonal-architecture, software-framework]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Plugins
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    C[Core System]
+    C --> P1[Plugin A]
+    C --> P2[Plugin B]
+    C --> P3[Plugin C]
+```
+
 ## Summary
 The Plugin metapattern allows a core system to be extended with additional functionality at runtime or build time without modifying the core. Extensions (plugins) conform to a defined interface and are discovered and loaded by the core, enabling open-ended extensibility while keeping the host system stable. Common examples include IDE extensions, browser add-ons, CMS plugins, and build-tool plugins.
 

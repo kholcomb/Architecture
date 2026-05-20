@@ -8,6 +8,19 @@ related: [layered-monolith, microservices, service-based-architecture, domain-dr
 source: https://github.com/denyspoltorak/metapatterns/wiki/Services
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    subgraph Monolith
+        M1[Module A]
+        M2[Module B]
+        M3[Module C]
+        M1 --> M2
+        M2 --> M3
+    end
+```
+
 ## Summary
 A single-deployable application partitioned into well-defined modules that expose explicit public APIs while hiding internal implementation. Module boundaries are enforced by packaging rules, access modifiers, build tooling, or architectural fitness functions — not merely by naming convention. Each module is conceptually independent and could, in principle, be extracted into a separate service; it simply has not been because the operational cost of doing so is not yet justified.
 

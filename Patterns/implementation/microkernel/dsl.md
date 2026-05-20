@@ -8,6 +8,16 @@ related: [microkernel, software-framework, plugins]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Microkernel
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    DSL[DSL Script] --> P[Parser]
+    P --> AST[AST]
+    AST --> I[Interpreter]
+    I --> K[Host Core]
+```
+
 ## Summary
 A Domain-Specific Language is a specialized mini-language tailored to a narrow problem domain. The host system acts as the microkernel; DSL scripts or programs are the plug-ins that extend its behavior without modifying the core. DSLs can be internal (embedded in a host language using its syntax — Ruby DSLs, Gradle Kotlin DSL) or external (a standalone language with its own parser — SQL, CSS, Gherkin, HCL). DSLs raise abstraction to domain concepts, allowing domain experts to express intent directly without general-purpose programming knowledge.
 

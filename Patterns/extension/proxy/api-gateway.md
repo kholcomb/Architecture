@@ -8,6 +8,17 @@ related: [load-balancer, reverse-proxy, ambassador, sidecar, backends-for-fronte
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    CW[Web Client] --> GW[API Gateway]
+    CM[Mobile Client] --> GW
+    GW --> SA[Service A]
+    GW --> SB[Service B]
+    GW --> SC[Service C]
+```
+
 ## Summary
 A single-entry-point proxy in front of backend services that handles cross-cutting concerns — authentication, rate limiting, routing, SSL termination, and request/response transformation — on behalf of all clients. Backend topology is invisible to clients.
 

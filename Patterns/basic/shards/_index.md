@@ -7,6 +7,16 @@ related: [monolith, services, pipeline]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shards
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    LB[Load Balancer]
+    LB --> S1[Shard 1]
+    LB --> S2[Shard 2]
+    LB --> S3[Shard 3]
+```
+
 ## Summary
 Multiple functionally identical subsystems with little or no intercommunication. Known as "Attack of the clones," the Shards pattern solves scalability by running parallel replicas of the same component — as stateless pools, persistent copies, geographic instances, or per-session actors. Performance is optimal when requests stay within a single shard; it degrades sharply when shards must synchronize shared state.
 

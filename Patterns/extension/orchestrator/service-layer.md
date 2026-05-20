@@ -8,6 +8,15 @@ related: [facade, transaction-script, saga, api-composer, orchestrator]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Orchestrator
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    C[Client] --> SL[Service Layer]
+    SL --> D[Domain Objects]
+    D --> DB[(Database)]
+```
+
 ## Summary
 A set of operations available to the application that defines the system's boundary and coordinates the application's response to each use case. The service layer acts as the orchestration layer above the domain model — it manages transactions, authorizes operations, coordinates between domain objects, and invokes infrastructure concerns (messaging, persistence, notifications). Business logic itself lives in the domain objects; the service layer only coordinates.
 

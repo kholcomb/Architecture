@@ -8,6 +8,17 @@ related: [adapter, facade, reverse-proxy, api-gateway, shared-repository, proxy]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    DA[Domain A] --> ACL[ACL]
+    subgraph Translation Boundary
+        ACL
+    end
+    ACL --> DB[Domain B]
+```
+
 ## Summary
 A translation layer that insulates a clean domain model from a legacy or external system's messy, inconsistent, or semantically incompatible model. All communication between the internal system and the external system passes through the ACL, which translates concepts, data structures, and terminology in both directions — preventing the external model's corruption from spreading into the internal domain.
 

@@ -8,6 +8,15 @@ related: [load-balancer, api-gateway, caching-layer, edge-service, proxy]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    I[Internet] --> RP[Reverse Proxy]
+    RP --> B1[Backend A]
+    RP --> B2[Backend B]
+```
+
 ## Summary
 A proxy that sits in front of one or more backend servers and forwards client requests to them. Clients interact with the reverse proxy as if it were the server — backend server topology is hidden from clients. The reverse proxy handles SSL/TLS termination, optionally performs load balancing, compression, or caching, and provides a single stable entry point that can route to any backend server.
 

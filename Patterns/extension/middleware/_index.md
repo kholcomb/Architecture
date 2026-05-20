@@ -7,6 +7,16 @@ related: [shared-repository, message-broker, service-mesh, event-mediator, persi
 source: https://github.com/denyspoltorak/metapatterns/wiki/Middleware
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    SA[Service A] --> MB[/Message Bus/]
+    SB[Service B] --> MB
+    MB --> SC[Service C]
+    MB --> SD[Service D]
+```
+
 ## Summary
 An intermediary component between services that handles routing, transformation, and delivery of messages. Services communicate exclusively through the middleware — they have no direct knowledge of each other. Enables loose coupling across services without requiring synchronous point-to-point connections.
 

@@ -8,6 +8,13 @@ related: [event-driven-architecture, batch-processing, pipes-and-filters, data-m
 source: https://github.com/denyspoltorak/metapatterns/wiki/Pipeline
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    S[/Stream Source/] --> SP[Stream Processor] --> SK[Sink]
+```
+
 ## Summary
 Data is processed continuously as it arrives on an unbounded stream, with results produced in near real-time rather than after a full dataset is accumulated. Processing topologies transform, filter, aggregate, and join events in flight. Stateful computations (windowed aggregations, session tracking) maintain state in a distributed store that is checkpointed for fault tolerance. Stream processing enables per-event reactions and low-latency analytics on data that is never fully at rest.
 

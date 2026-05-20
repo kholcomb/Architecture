@@ -8,6 +8,17 @@ related: [cells, work-queue, lambdas, partitions]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shards
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    LB[Dispatcher]
+    LB --> W1[Worker 1]
+    LB --> W2[Worker 2]
+    LB --> W3[Worker 3]
+    W1 & W2 & W3 --> S[(Shared Store)]
+```
+
 ## Summary
 A set of identical, stateless service instances sits behind a load balancer; any instance can handle any request because no request-local state is stored in the instance itself. All durable state is externalized to a shared store such as a database or cache, making instances fully interchangeable and trivially replaceable.
 

@@ -8,6 +8,16 @@ related: [message-broker, enterprise-service-bus, persistent-event-log, middlewa
 source: https://github.com/denyspoltorak/metapatterns/wiki/Middleware
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    E[Incoming Event] --> M[Mediator]
+    M --> SA[Service A]
+    M --> SB[Service B]
+    M --> SC[Service C]
+```
+
 ## Summary
 A central component that receives events and orchestrates a multi-step workflow by calling services in a defined sequence. Unlike pure event-driven choreography where services react independently, the mediator is aware of the full workflow and actively coordinates each step. It combines the loose coupling of messaging with the explicit control flow of an orchestrator.
 

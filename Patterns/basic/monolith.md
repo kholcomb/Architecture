@@ -7,6 +7,18 @@ related: [layers, modular-monolith, services, shards]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Monolith
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    subgraph Monolith
+        A[Module A]
+        B[Module B]
+        C[Module C]
+        D[Module D]
+    end
+```
+
 ## Summary
 A single deployable unit with no architectural boundaries enforced between components. All modules run in-process, sharing memory directly. The default starting point for most software — complexity is added only when justified.
 

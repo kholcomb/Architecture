@@ -8,6 +8,18 @@ related: [three-tier, layered-monolith, microservices, event-sourcing, cqrs]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Layers
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    A[Application]
+    D[Domain]
+    I[Infrastructure]
+    A --> D
+    I --> D
+    A --> I
+```
+
 ## Summary
 Organizes code around the business domain rather than technical concerns, using bounded contexts to separate distinct areas of the model and a ubiquitous language shared between developers and domain experts. Core building blocks — aggregates, entities, value objects, domain events, and repositories — keep business invariants explicit and co-located with the code that enforces them. DDD is both a strategic design approach (how to carve up a large domain) and a tactical set of patterns (how to model objects within a bounded context).
 

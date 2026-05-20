@@ -8,6 +8,25 @@ related: [hierarchy, service-oriented-architecture, microservices, bulkhead]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Hierarchy
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    RT[Cell Router]
+    subgraph Cell 1
+        S1[Services]
+        D1[(Data Store)]
+        S1 --- D1
+    end
+    subgraph Cell 2
+        S2[Services]
+        D2[(Data Store)]
+        S2 --- D2
+    end
+    RT --> S1
+    RT --> S2
+```
+
 ## Summary
 Cell-Based Architecture organizes services into self-contained, independently deployable cells. Each cell is a complete, bounded slice of the system — containing its own set of services, data stores, and control plane — capable of serving a defined subset of users or requests without depending on other cells. A cell router (or routing tier) sits above all cells and directs incoming traffic to the appropriate cell based on routing keys such as tenant ID, user ID, or geographic region. Because cells share no state with one another, failures, overloads, or deployments in one cell do not affect others.
 

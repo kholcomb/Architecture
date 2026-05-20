@@ -8,6 +8,19 @@ related: [service-based-architecture, modular-monolith, macroservices, api-gatew
 source: https://github.com/denyspoltorak/metapatterns/wiki/Services
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    C[Client]
+    C --> S1[Service A]
+    C --> S2[Service B]
+    C --> S3[Service C]
+    S1 --> D1[(DB A)]
+    S2 --> D2[(DB B)]
+    S3 --> D3[(DB C)]
+```
+
 ## Summary
 The system is decomposed into small, independently deployable services, each owning its own data store and communicating over the network. Each service aligns to a bounded context and can be developed, scaled, and deployed by a dedicated team without coordinating with others.
 

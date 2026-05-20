@@ -7,6 +7,13 @@ related: [services, layers, monolith]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Pipeline
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    S[Source] --> F1[Filter 1] --> F2[Filter 2] --> F3[Filter 3] --> T[Sink]
+```
+
 ## Summary
 A system topology where data flows through a chain of processors — one component per step of data transformation. The guiding principle: "Never return. Push your data through a chain of processors." Each filter receives input, transforms it, and passes it downstream without returning control to the caller. Steps can be swapped, reordered, or scaled independently, making the pattern well-suited to experimental algorithms and configurable processing chains. Complexity grows quickly when conditional branching or a large number of use cases are introduced.
 

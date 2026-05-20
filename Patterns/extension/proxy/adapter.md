@@ -8,6 +8,17 @@ related: [anticorruption-layer, facade, presentation-layer, reverse-proxy, proxy
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    C[Client] --> A[Adapter]
+    subgraph Translation Boundary
+        A
+    end
+    A --> S[Incompatible Service]
+```
+
 ## Summary
 Converts the interface of one component to the interface expected by another, enabling components with incompatible interfaces to work together without modifying either component. The adapter wraps the adaptee, accepting calls in the target interface's format and translating them into calls the adaptee understands — then translating the response back to the caller's expected format.
 

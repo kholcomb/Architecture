@@ -8,6 +8,13 @@ related: [batch-processing, stream-processing, workflow-system, event-driven-arc
 source: https://github.com/denyspoltorak/metapatterns/wiki/Pipeline
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    IN[Input] --> F1[Filter 1] --> F2[Filter 2] --> F3[Filter 3] --> OUT[Output]
+```
+
 ## Summary
 Processing logic is decomposed into a sequence of independent filter stages, each performing a single transformation on its input and passing the result downstream via a pipe. Filters are unaware of upstream or downstream stages and communicate only through the pipe interface. This composability allows pipelines to be assembled from reusable filters, reordered, branched, and tested in isolation. The pattern is foundational in Unix shell pipelines, compiler passes, ETL frameworks, and HTTP middleware chains.
 

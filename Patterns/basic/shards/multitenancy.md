@@ -8,6 +8,20 @@ related: [cells, partitions, row-level-security, rbac]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shards
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    subgraph Single Instance
+        APP[Application]
+        DB[(Shared DB)]
+        APP --> DB
+    end
+    T1[Tenant A] --> APP
+    T2[Tenant B] --> APP
+    T3[Tenant C] --> APP
+```
+
 ## Summary
 A single shared instance of the application and its infrastructure serves multiple tenants simultaneously. Isolation between tenants is enforced in the application layer — typically via a tenant ID column in every table and row-level security policies — rather than by physical separation. Tenants share compute, storage, and network resources, maximizing utilization and minimizing per-tenant cost.
 

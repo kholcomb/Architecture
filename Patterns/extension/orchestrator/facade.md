@@ -8,6 +8,16 @@ related: [adapter, api-composer, service-layer, anticorruption-layer, orchestrat
 source: https://github.com/denyspoltorak/metapatterns/wiki/Orchestrator
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    C[Client] --> F[Facade]
+    F --> SA[Subsystem A]
+    F --> SB[Subsystem B]
+    F --> SC[Subsystem C]
+```
+
 ## Summary
 A simplified interface to a complex subsystem. The facade delegates to the subsystem's components and hides their complexity from callers — callers interact with a single, cohesive API rather than coordinating multiple subsystem classes directly. The subsystem components remain available for callers that need fine-grained control, but most callers use the facade.
 

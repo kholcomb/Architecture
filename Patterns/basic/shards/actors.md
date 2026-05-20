@@ -8,6 +8,17 @@ related: [cells, stateless-pool, work-queue, event-sourcing]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shards
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    A1[Actor 1]
+    A2[Actor 2]
+    A3[Actor 3]
+    A1 -->|msg| A2
+    A2 -->|msg| A3
+```
+
 ## Summary
 Each actor is an independent, lightweight state machine that owns its private state and communicates exclusively via asynchronous messages. Actors are the unit of distribution: the runtime places and rebalances them across nodes transparently, enabling horizontal scaling of stateful workloads without shared memory or distributed locks.
 

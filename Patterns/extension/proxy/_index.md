@@ -7,6 +7,13 @@ related: [api-gateway, sidecar, ambassador, load-balancer, reverse-proxy, edge-s
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    C[Client] --> P[Proxy] --> T[Target]
+```
+
 ## Summary
 An intermediary that sits between a client and a component, forwarding requests and optionally adding cross-cutting behavior such as routing, caching, transformation, authentication, or observability. The proxy is typically transparent to one or both sides — the client sees only the proxy, not the downstream component, and the downstream component may be unaware of the proxy.
 

@@ -8,6 +8,16 @@ related: [three-tier, domain-driven-design, mvc, hexagonal-architecture]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Layers
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    B[Boundary]
+    C[Control]
+    E[Entity]
+    B --> C --> E
+```
+
 ## Summary
 Organizes objects into three distinct stereotypical roles: Entity (persistent domain data and its invariants), Control (use-case coordination logic that orchestrates entities and boundaries), and Boundary (interface objects that mediate between external actors and the system interior). Originally introduced by Ivar Jacobson in the context of use-case-driven design. The three roles map cleanly onto use cases: each use case has a dedicated Control object that drives the necessary Entities through one or more Boundary interfaces.
 

@@ -8,6 +8,24 @@ related: [api-composer, service-layer, transaction-script, event-mediator, orche
 source: https://github.com/denyspoltorak/metapatterns/wiki/Orchestrator
 ---
 
+## Diagram
+
+```mermaid
+sequenceDiagram
+    participant O as Orchestrator
+    participant A as Service A
+    participant B as Service B
+    participant C as Service C
+    O->>A: step 1
+    A-->>O: ok
+    O->>B: step 2
+    B-->>O: ok
+    O->>C: step 3
+    C--xO: fail
+    O->>B: compensate
+    O->>A: compensate
+```
+
 ## Summary
 Manages a long-running distributed transaction as a sequence of local transactions, where each step publishes an event or message that triggers the next step. If any step fails, the saga executes compensating transactions in reverse order to undo the work already completed by previous steps. Sagas can be implemented as choreography (event-driven, no central coordinator) or orchestration (a saga orchestrator directs each step).
 

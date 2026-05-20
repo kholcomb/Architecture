@@ -8,6 +8,16 @@ related: [mvvm, model-view-presenter, clean-architecture, hexagonal-architecture
 source: https://github.com/denyspoltorak/metapatterns/wiki/Hexagonal-Architecture
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    U[User] --> V[View]
+    V --> C[Controller]
+    C --> M[Model]
+    M --> V
+```
+
 ## Summary
 Model-View-Controller separates an application into three interconnected components: the Model (data, business rules, and state), the View (UI presentation and rendering), and the Controller (receives user input, updates the Model, and selects the View to render). The Controller mediates between the other two, keeping presentation logic out of the Model. MVC is the most widely adopted pattern for web and desktop UI frameworks, appearing in Rails, Django, Spring MVC, ASP.NET MVC, and many others.
 

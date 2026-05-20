@@ -7,6 +7,18 @@ related: [clean-architecture, onion-architecture, microkernel, domain-driven-des
 source: https://github.com/denyspoltorak/metapatterns/wiki/Hexagonal-Architecture
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    UI[UI Adapter] --> Port1[Input Port]
+    API[API Adapter] --> Port1
+    Port1 --> Core[Domain Core]
+    Core --> Port2[Output Port]
+    Port2 --> DB[DB Adapter]
+    Port2 --> Ext[External Adapter]
+```
+
 ## Summary
 Hexagonal Architecture, also known as Ports and Adapters, structures an application so that the domain core is completely isolated from external dependencies. The core exposes ports — technology-neutral interfaces — and all external actors (UI, databases, messaging systems, third-party APIs) connect through adapters that implement those ports. This ensures the application core never depends on infrastructure and can be driven equally well by tests, UIs, or automated scripts.
 

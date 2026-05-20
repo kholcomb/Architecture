@@ -8,6 +8,16 @@ related: [stateless-pool, work-queue, cells]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shards
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    EV[Event] --> L1[Lambda]
+    EV --> L2[Lambda]
+    L1 --> R[Result]
+    L2 --> R
+```
+
 ## Summary
 Each invocation is handled by an ephemeral, single-use compute instance that is provisioned on demand, executes exactly one task, and is destroyed (or returned to a cold pool) immediately after. There is no persistent in-process state between invocations; billing and resource consumption are scoped to the duration of a single call, making the pattern ideal for spiky, event-driven workloads.
 

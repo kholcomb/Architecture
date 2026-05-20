@@ -8,6 +8,16 @@ related: [enterprise-service-bus, persistent-event-log, event-mediator, service-
 source: https://github.com/denyspoltorak/metapatterns/wiki/Middleware
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    P1[Producer A] --> B[/Broker/]
+    P2[Producer B] --> B
+    B --> C1[Consumer A]
+    B --> C2[Consumer B]
+```
+
 ## Summary
 A dedicated service that receives messages from producers, routes them to the correct consumers, and optionally persists them until delivery is confirmed. Producers and consumers are fully decoupled in both time and topology — a producer does not know which consumers exist, and a consumer does not need to be running when a message is published.
 

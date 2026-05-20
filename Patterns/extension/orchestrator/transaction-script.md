@@ -8,6 +8,16 @@ related: [service-layer, facade, saga, orchestrator]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Orchestrator
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    C[Client] --> TS1[Script: Use Case A]
+    C --> TS2[Script: Use Case B]
+    TS1 --> DB[(Database)]
+    TS2 --> DB
+```
+
 ## Summary
 Business logic is organized as a single procedural script per use case that runs through a series of steps from start to finish. Each operation corresponds to one script that directly manipulates data, calls services, and handles errors in sequence. The approach is simple, explicit, and easy to trace — the entire flow is visible in one place.
 

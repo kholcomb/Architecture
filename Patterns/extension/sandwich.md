@@ -7,6 +7,21 @@ related: [shared-repository, middleware, proxy, presentation-layer, service-laye
 source: https://github.com/denyspoltorak/metapatterns/wiki/Sandwich
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    PA[Presentation Service A]
+    PB[Presentation Service B]
+    I[Shared Infrastructure]
+    DA[Domain Service A]
+    DB[Domain Service B]
+    PA --> I
+    PB --> I
+    I --> DA
+    I --> DB
+```
+
 ## Summary
 A fragmented metapattern where a shared infrastructure layer sits between two service layers — one on top (presentation or API services) and one on the bottom (data or domain services). The infrastructure middle layer provides common capabilities such as messaging, caching, or a shared database that both outer layers depend on. The structure resembles a sandwich: top services, shared infrastructure filling, bottom services.
 

@@ -8,6 +8,21 @@ related: [stateless-pool, partitions, multitenancy, cell-based-architecture]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shards
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    R[Router]
+    subgraph Cell 1
+        S1[Service] --> D1[(DB)]
+    end
+    subgraph Cell 2
+        S2[Service] --> D2[(DB)]
+    end
+    R --> S1
+    R --> S2
+```
+
 ## Summary
 Each shard is a fully self-contained replica of the entire system stack — routing, logic, and data — serving a fixed partition of users or tenants. A fault in one cell is fully contained and cannot cascade to others.
 

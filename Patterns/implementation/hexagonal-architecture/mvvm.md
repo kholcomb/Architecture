@@ -8,6 +8,15 @@ related: [mvc, model-view-presenter, clean-architecture]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Hexagonal-Architecture
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    V[View] --> VM[ViewModel]
+    VM --> M[Model]
+    VM --> V
+```
+
 ## Summary
 Model-View-ViewModel is a UI architectural pattern derived from MVC for data-binding-heavy platforms. The ViewModel exposes observable properties and commands that the View binds to declaratively; when ViewModel state changes, the View updates automatically without any imperative glue code. The Model holds domain data and business logic, the View is a thin declarative template, and the ViewModel acts as the View's state machine and command handler. Originated in Microsoft WPF and is now the dominant pattern in WPF, Android (Jetpack), SwiftUI, and Angular.
 

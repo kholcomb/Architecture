@@ -7,6 +7,24 @@ related: [service-oriented-architecture, layered-services, api-gateway, microser
 source: https://github.com/denyspoltorak/metapatterns/wiki/Backends-for-Frontends
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    WC[Web Client]
+    MC[Mobile Client]
+    WB[Web BFF]
+    MB[Mobile BFF]
+    SA[Service A]
+    SB[Service B]
+    WC --> WB
+    MC --> MB
+    WB --> SA
+    WB --> SB
+    MB --> SA
+    MB --> SB
+```
+
 ## Summary
 Backends for Frontends (BFF) is a pattern in which a dedicated backend service is created per client type — typically one for web, one for mobile, one for TV or other devices — rather than exposing a single general-purpose API to all clients. Each BFF aggregates and tailors data from downstream services to the specific needs, data shapes, and interaction patterns of its target client. This avoids the over-fetching and under-fetching that arises when a single API must serve the lowest common denominator of all clients.
 

@@ -8,6 +8,14 @@ related: [microservices, actors, event-driven-architecture, api-gateway]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Services
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    EV[Event] --> F[Function]
+    F --> OUT[Output]
+```
+
 ## Summary
 Each discrete unit of business logic is packaged as a stateless function deployed and billed independently. The cloud platform manages provisioning, scaling from zero to thousands of concurrent executions, and deprovisioning — there are no persistent server processes to manage. Functions are triggered by HTTP requests, queue messages, scheduled events, or storage changes, and must complete within a platform-imposed execution time limit.
 

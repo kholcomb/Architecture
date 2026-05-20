@@ -8,6 +8,15 @@ related: [message-broker, persistent-event-log, event-mediator, event-sourcing, 
 source: https://github.com/denyspoltorak/metapatterns/wiki/Pipeline
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    P[Publisher] --> EB[/Event Bus/]
+    EB --> S1[Subscriber A]
+    EB --> S2[Subscriber B]
+```
+
 ## Summary
 Components communicate by producing and consuming events through a broker, with no direct dependencies between producers and consumers. Producers emit events without knowledge of who handles them; consumers subscribe to events of interest and react independently.
 

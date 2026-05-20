@@ -8,6 +8,21 @@ related: [mesh, container-orchestrator, microkernel]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Mesh
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    subgraph Processing Units
+        PU1[Unit 1]
+        PU2[Unit 2]
+        PU3[Unit 3]
+    end
+    PU1 --- IMDG[(In-Memory Grid)]
+    PU2 --- IMDG
+    PU3 --- IMDG
+    IMDG --- MG[Messaging Grid]
+```
+
 ## Summary
 Space-Based Architecture eliminates the database as a central bottleneck by distributing both processing and data across a grid of identical processing units. Each unit holds a replica of the shared in-memory tuple space (the "space"); all reads and writes go to local memory, and changes are propagated asynchronously to other units. A messaging grid coordinates unit communication, and a data-replication engine synchronizes the in-memory state. Designed for extreme write scalability and elastic load handling, it is well-suited to high-volume transactional systems (ticketing, trading, gaming leaderboards).
 

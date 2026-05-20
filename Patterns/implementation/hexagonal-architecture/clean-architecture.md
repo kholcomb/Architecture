@@ -8,6 +8,19 @@ related: [onion-architecture, hexagonal-architecture, domain-driven-design, mvc]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Hexagonal-Architecture
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    subgraph FD["Frameworks & Drivers"]
+        subgraph IA["Interface Adapters"]
+            subgraph UC["Use Cases"]
+                EN[Entities]
+            end
+        end
+    end
+```
+
 ## Summary
 Organizes code into concentric rings — Entities (core business rules), Use Cases (application logic), Interface Adapters (controllers/presenters), and Frameworks & Drivers (UI, DB, external) — with a strict inward dependency rule: outer rings depend on inner rings, never the reverse.
 

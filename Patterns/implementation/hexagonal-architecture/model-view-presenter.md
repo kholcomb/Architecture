@@ -8,6 +8,16 @@ related: [mvc, mvvm, clean-architecture, hexagonal-architecture]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Hexagonal-Architecture
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    V[View] --> P[Presenter]
+    P --> V
+    P --> M[Model]
+    M --> P
+```
+
 ## Summary
 Model-View-Presenter is a derivative of MVC in which the View is completely passive — it contains no logic, only renders what it is told. The Presenter mediates all interactions: it receives UI events from the View, queries or updates the Model, and calls View methods directly to update the display. Because the View is a thin interface, it can be replaced with a mock, making the Presenter fully unit-testable. MVP was the dominant Android UI pattern before Jetpack ViewModel and is common in legacy WinForms and GWT applications.
 

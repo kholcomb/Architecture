@@ -7,6 +7,16 @@ related: [plugins, software-framework, hexagonal-architecture, container-orchest
 source: https://github.com/denyspoltorak/metapatterns/wiki/Microkernel
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    K[Kernel / Core]
+    K --> P1[Plugin A]
+    K --> P2[Plugin B]
+    K --> P3[Plugin C]
+```
+
 ## Summary
 The Microkernel pattern organizes a system around a minimal, stable core that provides only the essential services needed to load and coordinate plug-in modules. All other functionality is implemented as plug-ins that are discovered, loaded, and managed by the core at startup or on demand. The core and plug-ins communicate through well-defined interfaces, and the system's capabilities are determined by which plug-ins are present. Widely used in operating system kernels, IDEs, and application servers.
 

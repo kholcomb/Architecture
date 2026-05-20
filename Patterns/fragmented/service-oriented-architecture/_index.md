@@ -7,6 +7,17 @@ related: [layered-services, microservices, hierarchy, backends-for-frontends]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Service-Oriented-Architecture
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    ESB[Enterprise Service Bus]
+    SA[Service A] --> ESB
+    SB[Service B] --> ESB
+    ESB --> SC[Service C]
+    ESB --> SD[Service D]
+```
+
 ## Summary
 Service-Oriented Architecture (SOA) is an architectural style in which software components are published, discovered, and consumed as services. Services expose well-defined interfaces — historically via WSDL/SOAP over an Enterprise Service Bus (ESB), more recently via REST or messaging protocols — and are loosely coupled so that each can be developed, deployed, and versioned independently. SOA emphasizes reuse of shared services across multiple consumers and typically employs a centralized governance model to manage service contracts and lifecycle.
 

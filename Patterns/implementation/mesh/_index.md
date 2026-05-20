@@ -7,6 +7,18 @@ related: [space-based-architecture, microkernel, hexagonal-architecture]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Mesh
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    N1[Node 1] --- N2[Node 2]
+    N2 --- N3[Node 3]
+    N3 --- N4[Node 4]
+    N4 --- N1
+    N1 --- N3
+    N2 --- N4
+```
+
 ## Summary
 The Mesh pattern organizes all nodes in a system as peers that can communicate directly with any other node without routing through a central coordinator. There is no single point of control — each node holds partial state and participates equally in the network's operation. Mesh topologies are used in service meshes (Istio, Linkerd), peer-to-peer file-sharing networks, blockchain networks, and distributed computing grids. The pattern trades central control for resilience, horizontal scalability, and elimination of coordinator bottlenecks.
 

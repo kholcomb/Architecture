@@ -8,6 +8,21 @@ related: [event-sourcing, cqrs-view, materialized-view, saga, layered-services]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Layered-Services
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    C[Command]
+    Q[Query]
+    WM[Write Model]
+    ES[(Event Store)]
+    RM[Read Model]
+    VDB[(View DB)]
+    C --> WM --> ES
+    ES --> RM --> VDB
+    Q --> VDB
+```
+
 ## Summary
 Separates the write model (commands that mutate state) from the read model (queries that return data) into distinct components, code paths, and optionally datastores. The write side enforces invariants; the read side is optimized independently for query performance.
 

@@ -8,6 +8,21 @@ related: [cqrs, cqrs-view, materialized-view, saga, polyglot-persistence]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Polyglot-Persistence
 ---
 
+## Diagram
+
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant ES as Event Store
+    participant P1 as Projection A
+    participant P2 as Projection B
+    C->>ES: append event
+    ES-->>P1: event
+    P1->>P1: update read model
+    ES-->>P2: event
+    P2->>P2: update read model
+```
+
 ## Summary
 State is derived by replaying an append-only sequence of domain events rather than storing the current state directly. The event log is the authoritative source of truth; the current state of any entity is a projection computed by folding over its event history. Events are immutable facts about what happened (e.g. `OrderPlaced`, `PaymentReceived`) and are never updated or deleted, providing a complete audit trail and enabling temporal queries.
 

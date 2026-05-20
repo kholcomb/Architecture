@@ -7,6 +7,18 @@ related: [layered-services, service-oriented-architecture, cell-based-architectu
 source: https://github.com/denyspoltorak/metapatterns/wiki/Hierarchy
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    R[Root]
+    R --> A[Node A]
+    R --> B[Node B]
+    A --> A1[Node A1]
+    A --> A2[Node A2]
+    B --> B1[Node B1]
+```
+
 ## Summary
 Hierarchy is a metapattern in which services are organized into a strict hierarchy of levels — upper layers delegate work to lower layers, and lower layers never call upward. Each level abstracts the implementation details of the level below it, exposing a cleaner interface to the level above. This one-directional dependency flow prevents circular dependencies, makes the system easier to reason about, and allows lower levels to be replaced or evolved without affecting callers above the change boundary.
 

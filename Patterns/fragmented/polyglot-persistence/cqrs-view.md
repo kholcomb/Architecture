@@ -8,6 +8,18 @@ related: [cqrs, event-sourcing, materialized-view, read-replicas, polyglot-persi
 source: https://github.com/denyspoltorak/metapatterns/wiki/Polyglot-Persistence
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    ES[(Event Store)]
+    PROJ[Projection]
+    VDB[(View DB)]
+    Q[Query Client]
+    ES --> PROJ --> VDB
+    Q --> VDB
+```
+
 ## Summary
 A CQRS View Database is a dedicated read-optimized datastore (or schema) maintained as a projection of the command-side's events or state changes. It is updated asynchronously as events flow from the write side and is structured specifically to serve the query patterns of one or more consumers. Unlike a general-purpose read replica, the view database may denormalize, aggregate, or reshape data into a form that makes reads trivially fast with no joins required.
 

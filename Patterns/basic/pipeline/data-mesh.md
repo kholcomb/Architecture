@@ -8,6 +8,23 @@ related: [event-driven-architecture, stream-processing, batch-processing, micros
 source: https://github.com/denyspoltorak/metapatterns/wiki/Pipeline
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    subgraph Domain A
+        PA[Data Product A]
+    end
+    subgraph Domain B
+        PB[Data Product B]
+    end
+    subgraph Domain C
+        PC[Data Product C]
+    end
+    PA --- PB
+    PB --- PC
+```
+
 ## Summary
 Decentralizes data ownership by assigning each domain team responsibility for publishing its data as a versioned, discoverable, and interoperable data product. A federated governance layer — shared standards for schema, quality SLAs, and access control — ensures that data products across domains remain composable without requiring a central data team to own or transform all data. Contrasts with centralized data lakes and warehouses, where a single platform team becomes the bottleneck for every analytical use case.
 

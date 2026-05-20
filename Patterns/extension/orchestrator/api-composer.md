@@ -8,6 +8,25 @@ related: [saga, facade, api-gateway, service-layer, orchestrator]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Orchestrator
 ---
 
+## Diagram
+
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant AC as API Composer
+    participant SA as Service A
+    participant SB as Service B
+    C->>AC: request
+    par
+        AC->>SA: fetch A
+    and
+        AC->>SB: fetch B
+    end
+    SA-->>AC: data A
+    SB-->>AC: data B
+    AC-->>C: aggregated response
+```
+
 ## Summary
 Aggregates responses from multiple downstream services into a single composed response for the client. The API Composer calls each required service (sequentially or in parallel), collects their results, and merges them into a unified response. This reduces client round-trips, hides backend service decomposition from clients, and centralizes fan-out logic server-side.
 

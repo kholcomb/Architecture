@@ -8,6 +8,19 @@ related: [api-composer, saga, transaction-script, orchestrator]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Orchestrator
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    I[Input] --> M1[Map Worker]
+    I --> M2[Map Worker]
+    I --> M3[Map Worker]
+    M1 --> R[Reduce]
+    M2 --> R
+    M3 --> R
+    R --> O[Output]
+```
+
 ## Summary
 A parallel data processing pattern where an orchestrator distributes work across multiple nodes (the Map phase — applying a function independently to each element or partition) and then aggregates the results (the Reduce phase — combining the intermediate outputs into a final result). Enables processing of datasets far larger than a single machine can handle by exploiting data parallelism.
 

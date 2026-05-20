@@ -8,6 +8,19 @@ related: [three-tier, domain-driven-design, modular-monolith, microservices]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Layers
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    subgraph Monolith
+        P[Presentation]
+        A[Application]
+        D[Domain]
+        I[Infrastructure]
+        P --> A --> D --> I
+    end
+```
+
 ## Summary
 A single-deployable application that enforces strict horizontal layer boundaries internally: typically Presentation, Application, Domain, and Infrastructure. All layers compile and deploy as one unit, but dependencies flow only downward (or inward, in hexagonal variants). The Layered Monolith is the most common starting point for greenfield applications and remains appropriate whenever independent deployment of components is not required.
 

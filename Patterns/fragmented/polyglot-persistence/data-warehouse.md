@@ -8,6 +8,17 @@ related: [data-lake, materialized-view, cqrs-view, polyglot-persistence]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Polyglot-Persistence
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    OPS[Operational DBs]
+    ETL[ETL Pipeline]
+    DW[(Dimensional Model)]
+    BI[BI / Reporting]
+    OPS --> ETL --> DW --> BI
+```
+
 ## Summary
 A Data Warehouse is a central repository of integrated data from multiple operational sources, optimized for analytical queries (OLAP). Data is extracted from source systems, transformed into a consistent structure, and loaded via ETL pipelines into a schema-on-write model (typically star or snowflake schema). The warehouse is read-optimized for complex aggregations across large datasets and serves business intelligence, reporting, and decision-support workloads.
 

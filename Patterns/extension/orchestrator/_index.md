@@ -7,6 +7,22 @@ related: [saga, api-composer, mapreduce, facade, transaction-script, service-lay
 source: https://github.com/denyspoltorak/metapatterns/wiki/Orchestrator
 ---
 
+## Diagram
+
+```mermaid
+sequenceDiagram
+    participant O as Orchestrator
+    participant A as Service A
+    participant B as Service B
+    participant C as Service C
+    O->>A: call step 1
+    A-->>O: result
+    O->>B: call step 2
+    B-->>O: result
+    O->>C: call step 3
+    C-->>O: result
+```
+
 ## Summary
 A central coordinator that knows the steps of a workflow and explicitly calls each participant service in the correct sequence. The orchestrator holds all control-flow logic; participants are passive and unaware of the larger workflow. This contrasts with choreography, where services react autonomously to events without a central authority directing them.
 

@@ -8,6 +8,22 @@ related: [cache-aside, materialized-view, cqrs-view, polyglot-persistence]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Polyglot-Persistence
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    WC[Write Client]
+    RC[Read Client]
+    PRI[(Primary)]
+    R1[(Replica 1)]
+    R2[(Replica 2)]
+    WC --> PRI
+    PRI --> R1
+    PRI --> R2
+    RC --> R1
+    RC --> R2
+```
+
 ## Summary
 Read Replicas are read-only copies of a primary database, kept in sync via continuous replication. All write operations target the primary; read queries are routed to one or more replicas to distribute read load and reduce contention on the primary. Replicas may lag slightly behind the primary, making data eventually consistent. This pattern is a simple and widely supported mechanism for scaling read throughput without sharding.
 

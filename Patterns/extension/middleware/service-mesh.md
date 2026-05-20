@@ -8,6 +8,21 @@ related: [sidecar, ambassador, api-gateway, message-broker, middleware]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Middleware
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    subgraph Pod A
+        SA[Service A] --- SPA[Sidecar Proxy]
+    end
+    subgraph Pod B
+        SB[Service B] --- SPB[Sidecar Proxy]
+    end
+    SPA --> SPB
+    SPA --> CP[Control Plane]
+    SPB --> CP
+```
+
 ## Summary
 A dedicated infrastructure layer, typically implemented as co-deployed sidecar proxies alongside each service instance, that handles all service-to-service communication: load balancing, retries, circuit breaking, mTLS encryption, and distributed tracing. Application code is completely unaware of the mesh — it communicates as if talking directly to peers, while the sidecar intercepts all traffic transparently.
 

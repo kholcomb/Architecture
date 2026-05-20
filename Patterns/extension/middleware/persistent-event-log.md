@@ -8,6 +8,16 @@ related: [message-broker, event-mediator, enterprise-service-bus, middleware, sh
 source: https://github.com/denyspoltorak/metapatterns/wiki/Middleware
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    P1[Producer A] --> L[(Event Log)]
+    P2[Producer B] --> L
+    L --> C1[Consumer A]
+    L --> C2[Consumer B]
+```
+
 ## Summary
 An append-only, ordered log of events that retains all events durably for a configurable retention period (or indefinitely). Consumers can read from any offset, enabling replay of historical events and bootstrapping new consumers with full history. Acts as the source of truth in event-sourced systems, replacing the shared database as the integration point between services.
 

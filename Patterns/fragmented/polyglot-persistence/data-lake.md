@@ -8,6 +8,23 @@ related: [data-warehouse, materialized-view, event-sourcing, polyglot-persistenc
 source: https://github.com/denyspoltorak/metapatterns/wiki/Polyglot-Persistence
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    SA[Source A]
+    SB[Source B]
+    SC[Source C]
+    DL[(Data Lake)]
+    AN[Analytics]
+    ML[ML / Data Science]
+    SA --> DL
+    SB --> DL
+    SC --> DL
+    DL --> AN
+    DL --> ML
+```
+
 ## Summary
 A Data Lake is a centralized repository that stores raw data in its native format — structured, semi-structured, or unstructured — without requiring a predefined schema at write time. Schema is applied on read, allowing diverse analytical workloads (machine learning, ad-hoc exploration, reporting) to interpret the same raw data differently. This approach defers the cost and rigidity of schema design, enabling storage of all data before its use cases are fully defined.
 

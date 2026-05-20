@@ -8,6 +8,17 @@ related: [domain-driven-design, layered-monolith, mvc, microservices]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Layers
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    P[Presentation]
+    B[Business Logic]
+    D[Data Access]
+    DB[(Database)]
+    P --> B --> D --> DB
+```
+
 ## Summary
 Structures an application into three horizontal layers: Presentation (UI), Business Logic (application/domain), and Data Access (persistence). Each layer may only communicate with the layer directly below it. The most common structure for web applications and CRUD-oriented services.
 

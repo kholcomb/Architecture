@@ -8,6 +8,19 @@ related: [clean-architecture, hexagonal-architecture, domain-driven-design, mvc]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Hexagonal-Architecture
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    subgraph INF["Infrastructure / UI"]
+        subgraph APP["Application Services"]
+            subgraph DS["Domain Services"]
+                DM[Domain Model]
+            end
+        end
+    end
+```
+
 ## Summary
 Onion Architecture organizes code into concentric layers — Domain Model (innermost), Domain Services, Application Services, and Infrastructure/UI (outermost) — with the same inward-only dependency rule as Clean Architecture: outer layers depend on inner layers, never the reverse. The domain model has no external dependencies whatsoever. Introduced by Jeffrey Palermo, Onion Architecture differs from Clean Architecture mainly in layer naming conventions; both are formal expressions of the Hexagonal Architecture principle.
 

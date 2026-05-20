@@ -7,6 +7,18 @@ related: [middleware, sandwich, persistent-event-log, anticorruption-layer, serv
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shared-Repository
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    SA[Service A]
+    SB[Service B]
+    SC[Service C]
+    SA --> DB[(Shared Database)]
+    SB --> DB
+    SC --> DB
+```
+
 ## Summary
 A single shared datastore that multiple services read from and write to directly. Services integrate at the data layer rather than through APIs or messaging. The repository serves as the implicit contract between services — any service that needs data reads it directly, and any service that produces data writes it directly.
 

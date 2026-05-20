@@ -7,6 +7,16 @@ related: [service-oriented-architecture, hierarchy, polyglot-persistence, backen
 source: https://github.com/denyspoltorak/metapatterns/wiki/Layered-Services
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    API[API Layer]
+    BL[Business Layer]
+    DL[Data Layer]
+    API --> BL --> DL
+```
+
 ## Summary
 Layered Services combines the Layers and Services metapatterns — the system is decomposed into independent services, and each service is internally structured into horizontal layers (e.g. presentation, application, domain, infrastructure). This dual decomposition enforces separation of concerns at both the macro (inter-service) and micro (intra-service) levels, yielding systems that are independently deployable yet internally coherent.
 

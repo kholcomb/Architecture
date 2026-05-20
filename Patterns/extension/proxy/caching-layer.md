@@ -8,6 +8,15 @@ related: [reverse-proxy, api-gateway, edge-service, load-balancer, proxy]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    C[Client] --> CA[Cache]
+    CA -->|miss| O[Origin]
+    CA -->|hit| C
+```
+
 ## Summary
 A proxy that intercepts requests destined for a backend service and serves responses from a local cache when a valid cached entry exists. On a cache miss, it forwards the request to the backend, stores the response, and returns it to the caller. Reduces backend load, improves response times for repeated requests, and can absorb traffic spikes for read-heavy workloads.
 

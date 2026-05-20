@@ -8,6 +8,20 @@ related: [microservices, modular-monolith, service-oriented-architecture]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Service-Oriented-Architecture
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    SA[Service A]
+    SB[Service B]
+    SC[Service C]
+    SDB[(Shared DB)]
+    SA --> SB --> SC
+    SA --- SDB
+    SB --- SDB
+    SC --- SDB
+```
+
 ## Summary
 An architecture that appears distributed (multiple deployed services) but retains the tight coupling of a monolith. Services share databases, call each other synchronously in deep chains, and cannot be deployed independently. It combines the worst properties of both architectures.
 

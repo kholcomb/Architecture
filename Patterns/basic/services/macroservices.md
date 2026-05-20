@@ -8,6 +8,17 @@ related: [microservices, service-based-architecture, modular-monolith]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Services
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    C[Client]
+    C --> SA[Service A]
+    C --> SB[Service B]
+    SA --> DA[(DB A)]
+    SB --> DB[(DB B)]
+```
+
 ## Summary
 Decomposes the system into two to five large services aligned to major business domains, each owning its data store and deployed independently. Macroservices are coarser than microservices — each service may contain multiple logical modules — but finer than a monolith. The approach trades the fine-grained independent scalability of microservices for significantly lower operational overhead, making it suitable for teams that want some independent deployment without a full microservices platform.
 

@@ -8,6 +8,15 @@ related: [adapter, anticorruption-layer, api-gateway, facade, proxy]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    C[Client] --> PL[Presentation Layer]
+    PL --> AL[Application Layer]
+    AL --> D[Domain Objects]
+```
+
 ## Summary
 The component responsible for rendering data for users or external consumers in the format they require — HTML for browsers, JSON for API clients, XML for legacy integrations. The presentation layer translates between domain or application data and the representation format required by the consumer, keeping rendering concerns out of the domain model and business logic.
 

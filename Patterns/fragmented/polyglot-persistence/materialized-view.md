@@ -8,6 +8,18 @@ related: [cqrs-view, cache-aside, read-replicas, event-sourcing, polyglot-persis
 source: https://github.com/denyspoltorak/metapatterns/wiki/Polyglot-Persistence
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    SRC[(Source DB)]
+    CF[Change Feed]
+    MV[(Materialized View)]
+    QC[Query Client]
+    SRC --> CF --> MV
+    QC --> MV
+```
+
 ## Summary
 A Materialized View is a pre-computed, stored query result that is refreshed when the underlying source data changes. Rather than recomputing an expensive query (involving joins, aggregations, or window functions) at read time, the result is computed eagerly and persisted. The view trades some degree of freshness for substantially faster read performance and reduced compute cost at query time.
 

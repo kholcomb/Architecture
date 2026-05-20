@@ -8,6 +8,18 @@ related: [microservices, faas, event-driven-architecture, saga]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Services
 ---
 
+## Diagram
+
+```mermaid
+graph LR
+    A1[Actor A]
+    A2[Actor B]
+    A3[Actor C]
+    A1 -->|message| A2
+    A2 -->|message| A3
+    A3 -->|message| A1
+```
+
 ## Summary
 Each service (or fine-grained unit of logic) is modeled as an actor: an independent entity with its own private state and a message inbox. Actors communicate exclusively by sending asynchronous messages to each other's inboxes — there are no direct method calls, no shared memory, and no shared mutable state between actors. An actor processes one message at a time, which eliminates concurrency bugs within a single actor. The model scales naturally across cores and nodes because message passing is location-transparent.
 

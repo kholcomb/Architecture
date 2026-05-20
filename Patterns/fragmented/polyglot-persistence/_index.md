@@ -7,6 +7,16 @@ related: [layered-services, service-oriented-architecture, cqrs, event-sourcing]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Polyglot-Persistence
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    SVC[Service]
+    SVC --> RDB[(Relational DB)]
+    SVC --> DOC[(Document Store)]
+    SVC --> KV[(Key-Value Store)]
+```
+
 ## Summary
 Polyglot Persistence is an architectural approach in which different data stores are used for different parts of the system, each chosen for its fit with the data shape and access patterns of that component. A relational database may handle transactions and referential integrity, a document store may hold flexible schemas, a graph database may manage relationship traversal, a key-value cache may serve hot reads, and a time-series store may ingest metrics — all within the same system. The result is that each service or component uses the storage engine best matched to its requirements rather than forcing all data into a single general-purpose database.
 

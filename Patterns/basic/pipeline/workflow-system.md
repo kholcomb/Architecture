@@ -8,6 +8,20 @@ related: [pipes-and-filters, event-driven-architecture, batch-processing, saga]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Pipeline
 ---
 
+## Diagram
+
+```mermaid
+stateDiagram-v2
+    [*] --> Pending
+    Pending --> Running : start
+    Running --> Waiting : human task
+    Waiting --> Running : approved
+    Running --> Completed : finish
+    Running --> Failed : error
+    Failed --> Running : retry
+    Completed --> [*]
+```
+
 ## Summary
 Long-running, multi-step business processes are modeled as explicit, persisted workflows. Each step may involve automated service calls, human tasks, approvals, timers, and conditional branching. The workflow engine persists state between steps, handles retries and timeouts, and resumes execution after failures or prolonged waits — potentially spanning hours, days, or months. Workflow definitions are first-class artifacts that make business process logic visible and auditable independently of the services that execute individual steps.
 

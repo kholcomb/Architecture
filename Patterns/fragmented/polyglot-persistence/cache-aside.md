@@ -8,6 +8,24 @@ related: [read-replicas, materialized-view, cqrs-view, polyglot-persistence]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Polyglot-Persistence
 ---
 
+## Diagram
+
+```mermaid
+sequenceDiagram
+    participant App
+    participant Cache
+    participant DB
+    App->>Cache: read(key)
+    alt hit
+        Cache-->>App: value
+    else miss
+        Cache-->>App: null
+        App->>DB: read(key)
+        DB-->>App: value
+        App->>Cache: write(key, value)
+    end
+```
+
 ## Summary
 Application code checks the cache first before reading from the database. On a cache miss, the application loads the value from the primary datastore, stores it in the cache, and returns it to the caller. The cache is not the system of record — it is a lazy-loaded, potentially expiring copy. Writes go directly to the primary store and may invalidate or update the cache entry.
 

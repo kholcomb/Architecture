@@ -8,6 +8,19 @@ related: [modular-monolith, microservices, macroservices, domain-driven-design]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Services
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    SA[Service A]
+    SB[Service B]
+    SC[Service C]
+    DB[(Shared DB)]
+    SA --> DB
+    SB --> DB
+    SC --> DB
+```
+
 ## Summary
 Decomposes the system into a small number of independently deployable, coarse-grained services — typically four to twelve — that often share a common database. Each service aligns to a major business capability (e.g., ordering, inventory, billing) and can be deployed on its own schedule. The shared database simplifies data consistency compared to full microservices while still allowing teams to own and release their service independently.
 

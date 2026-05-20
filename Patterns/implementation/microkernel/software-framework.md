@@ -8,6 +8,19 @@ related: [microkernel, plugins, container-orchestrator, dsl]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Microkernel
 ---
 
+## Diagram
+
+```mermaid
+graph TD
+    FW[Framework Core]
+    FW --> H1[Hook / Callback A]
+    FW --> H2[Hook / Callback B]
+    FW --> H3[Lifecycle Method]
+    H1 --> UC[User Code]
+    H2 --> UC
+    H3 --> UC
+```
+
 ## Summary
 A Software Framework is a reusable, extensible application skeleton that provides inversion of control: the framework calls user code rather than the reverse. Users extend predefined extension points — hooks, callbacks, abstract base classes, or annotated methods — and the framework orchestrates their execution within a predefined lifecycle. This "Hollywood Principle" (don't call us, we'll call you) distinguishes a framework from a library. Examples include Spring, Rails, Django, Angular, and JUnit.
 
