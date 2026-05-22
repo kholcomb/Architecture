@@ -17,7 +17,7 @@ ADR/patterns/
 
 Metapatterns with no selected sub-patterns remain as flat `.md` files (no folder).
 
-Categories: `basic`, `extension`, `fragmented`, `implementation`
+Categories: `basic`, `extension`, `fragmented`, `implementation`, `operational`, `security`, `ai`
 
 ## Schema
 

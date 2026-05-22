@@ -3,7 +3,7 @@ name: Pipeline
 category: basic
 also-known-as: [Pipes and Filters, Event-Driven Architecture, Stream Processing]
 tags: [sequential-processing, data-transformation, composability, stateless-steps]
-related: [services, layers, monolith]
+related: [services, layers, monolith, training-pipeline, prompt-chaining]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Pipeline
 ---
 

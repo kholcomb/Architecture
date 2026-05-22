@@ -4,7 +4,7 @@ category: extension/proxy
 also-known-as: [Edge Gateway, API Front Door]
 tags: [routing, auth, rate-limiting, ingress, aggregation]
 parent: proxy
-related: [load-balancer, reverse-proxy, ambassador, sidecar, backends-for-frontends, api-composer]
+related: [load-balancer, reverse-proxy, ambassador, sidecar, backends-for-frontends, api-composer, ai-gateway]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
