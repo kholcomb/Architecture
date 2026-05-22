@@ -4,7 +4,7 @@ category: extension/orchestrator
 also-known-as: [Long-Running Transaction, Distributed Transaction, Process Manager]
 tags: [distributed-transactions, compensation, consistency, resilience, workflow]
 parent: orchestrator
-related: [api-composer, service-layer, transaction-script, event-mediator, orchestrator]
+related: [api-composer, service-layer, transaction-script, event-mediator, orchestrator, multi-agent]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Orchestrator
 ---
 

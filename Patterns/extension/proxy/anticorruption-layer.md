@@ -4,7 +4,7 @@ category: extension/proxy
 also-known-as: [ACL, Translation Layer, Integration Facade]
 tags: [ddd, translation, isolation, legacy, domain-model]
 parent: proxy
-related: [adapter, facade, reverse-proxy, api-gateway, shared-repository, proxy]
+related: [adapter, facade, reverse-proxy, api-gateway, shared-repository, proxy, strangler-fig]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Proxy
 ---
 
