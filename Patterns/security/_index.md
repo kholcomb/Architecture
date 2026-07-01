@@ -45,3 +45,4 @@ A family of architectural patterns for structuring how trust is established, how
 
 - **From:** Any topology that handles external requests or multi-tenant data
 - **To:** Apply Zero Trust and Security Zones as the structural foundation; layer Claims-Based Identity for portable authorization; add Sandboxing where untrusted code executes
+- **Authentication:** Establish who or what is calling — Federated Identity for users, Service Identity (mTLS) for workloads, Gateway Authentication to centralize verification at the edge, and Valet Key for scoped delegated access
