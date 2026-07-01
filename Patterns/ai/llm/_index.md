@@ -45,3 +45,4 @@ A family of patterns for structuring applications built on top of large language
 
 - **From:** Direct single-prompt LLM calls as the baseline
 - **To:** Compose Agent + RAG + Memory for autonomous task completion; add AI Gateway for multi-provider resilience; scale to Multi-Agent for parallel or specialized workloads
+- **Workflows:** Combine the composable control-flow patterns — Prompt Chaining, Routing, Parallelization, Evaluator-Optimizer, and Planning — to structure multi-step LLM applications before reaching for a fully autonomous Agent
