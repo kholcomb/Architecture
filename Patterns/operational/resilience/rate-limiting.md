@@ -5,7 +5,7 @@ also-known-as: [Throttling, Traffic Shaping]
 tags: [capacity-protection, fairness, overload, token-bucket, leaky-bucket]
 parent: resilience
 related: [circuit-breaker, bulkhead, api-gateway]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Rate-Limiting
+source: https://learn.microsoft.com/en-us/azure/architecture/patterns/rate-limiting-pattern
 ---
 
 ## Diagram

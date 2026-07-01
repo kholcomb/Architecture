@@ -5,7 +5,7 @@ also-known-as: [Graceful Degradation, Default Response]
 tags: [degraded-mode, availability, user-experience, fault-tolerance]
 parent: resilience
 related: [circuit-breaker, timeout, retry]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Fallback
+source: https://www.pollydocs.org/strategies/fallback.html
 ---
 
 ## Diagram

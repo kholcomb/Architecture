@@ -5,7 +5,7 @@ also-known-as: [Function Calling, Tool Calling]
 tags: [function-calling, tools, actions, integration, extensibility]
 parent: llm
 related: [agent, prompt-chaining, service-layer]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Tool-Use
+source: https://docs.anthropic.com/en/docs/build-with-claude/tool-use/overview
 ---
 
 ## Diagram

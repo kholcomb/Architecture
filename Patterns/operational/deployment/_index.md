@@ -4,7 +4,7 @@ category: operational
 also-known-as: [Release Strategies, Progressive Delivery]
 tags: [release, rollout, rollback, progressive-delivery, risk-reduction]
 related: [resilience, observability]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Deployment
+source: https://continuousdelivery.com/
 ---
 
 ## Diagram

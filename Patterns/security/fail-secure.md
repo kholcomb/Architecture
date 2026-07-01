@@ -5,7 +5,7 @@ also-known-as: [Fail Closed, Secure Default, Deny by Default]
 tags: [failure-mode, default-deny, authorization, safe-failure]
 parent: security
 related: [zero-trust, fallback, circuit-breaker]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Fail-Secure
+source: https://owasp.org/www-community/Fail_securely
 ---
 
 ## Diagram

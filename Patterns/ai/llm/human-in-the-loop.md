@@ -5,7 +5,7 @@ also-known-as: [HITL, Human Oversight, Human Review Gate]
 tags: [oversight, review, approval, escalation, safety, confidence]
 parent: llm
 related: [agent, multi-agent, fail-secure]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Human-in-the-Loop
+source: https://www.anthropic.com/engineering/building-effective-agents
 ---
 
 ## Diagram

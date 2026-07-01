@@ -5,7 +5,7 @@ also-known-as: [Multi-Agent System, Agent Network, Agent Swarm]
 tags: [multi-agent, orchestration, specialization, parallelism, coordination]
 parent: llm
 related: [agent, human-in-the-loop, prompt-chaining, saga, orchestrator]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Multi-Agent
+source: https://www.anthropic.com/engineering/built-multi-agent-research-system
 ---
 
 ## Diagram

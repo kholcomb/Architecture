@@ -5,7 +5,7 @@ also-known-as: [Token-Based Identity, Claims-Based Access Control]
 tags: [identity, authorization, tokens, portability, decentralization]
 parent: security
 related: [zero-trust, security-zones, api-gateway]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Claims-Based-Identity
+source: https://learn.microsoft.com/en-us/dotnet/framework/security/claims-based-identity-model
 ---
 
 ## Diagram

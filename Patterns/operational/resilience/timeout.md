@@ -5,7 +5,7 @@ also-known-as: [Request Timeout, Deadline]
 tags: [latency, fail-fast, resource-release, availability]
 parent: resilience
 related: [circuit-breaker, retry, fallback, bulkhead]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Timeout
+source: https://www.pollydocs.org/strategies/timeout.html
 ---
 
 ## Diagram

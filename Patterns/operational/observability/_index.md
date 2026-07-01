@@ -4,7 +4,7 @@ category: operational
 also-known-as: [Telemetry, Monitoring]
 tags: [visibility, telemetry, tracing, logging, metrics, debugging]
 related: [resilience, deployment]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Observability
+source: https://opentelemetry.io/docs/concepts/observability-primer/
 ---
 
 ## Diagram

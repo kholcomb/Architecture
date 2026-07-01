@@ -4,7 +4,7 @@ category: ai
 also-known-as: [Generative AI Patterns, Foundation Model Patterns]
 tags: [llm, generative-ai, agents, rag, prompt, context, tool-use]
 related: [ml-systems, extension/proxy/api-gateway, extension/orchestrator]
-source: https://github.com/denyspoltorak/metapatterns/wiki/LLM-Applications
+source: https://www.anthropic.com/engineering/building-effective-agents
 ---
 
 ## Diagram

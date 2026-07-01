@@ -5,7 +5,7 @@ also-known-as: [Zero Trust Architecture, Zero Trust Network, Never Trust Always 
 tags: [trust, identity, authorization, network, least-privilege]
 parent: security
 related: [security-zones, claims-based-identity, fail-secure]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Zero-Trust
+source: https://csrc.nist.gov/pubs/sp/800/207/final
 ---
 
 ## Diagram

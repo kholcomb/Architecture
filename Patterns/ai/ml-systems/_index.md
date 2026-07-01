@@ -4,7 +4,7 @@ category: ai
 also-known-as: [MLOps Patterns, Machine Learning Infrastructure Patterns]
 tags: [mlops, training, inference, feature-engineering, model-management]
 related: [llm, basic/pipeline, extension/shared-repository]
-source: https://github.com/denyspoltorak/metapatterns/wiki/ML-Systems
+source: https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
 ---
 
 ## Diagram

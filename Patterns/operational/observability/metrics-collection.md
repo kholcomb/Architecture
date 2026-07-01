@@ -5,7 +5,7 @@ also-known-as: [Time-Series Metrics, Telemetry, Instrumentation]
 tags: [metrics, slo, alerting, time-series, RED, USE, golden-signals]
 parent: observability
 related: [distributed-tracing, log-aggregation, health-check]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Metrics-Collection
+source: https://microservices.io/patterns/observability/application-metrics.html
 ---
 
 ## Diagram

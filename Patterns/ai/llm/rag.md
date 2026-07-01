@@ -5,7 +5,7 @@ also-known-as: [RAG, Grounded Generation]
 tags: [rag, retrieval, vector-search, grounding, knowledge-base, context]
 parent: llm
 related: [agent, memory, materialized-view, caching-layer]
-source: https://github.com/denyspoltorak/metapatterns/wiki/RAG
+source: https://arxiv.org/abs/2005.11401
 ---
 
 ## Diagram

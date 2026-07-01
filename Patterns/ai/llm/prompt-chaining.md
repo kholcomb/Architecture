@@ -5,7 +5,7 @@ also-known-as: [LLM Chaining, Sequential Prompting, Chain-of-Thought Pipeline]
 tags: [chaining, pipeline, decomposition, sequential, workflow]
 parent: llm
 related: [agent, tool-use, pipeline]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Prompt-Chaining
+source: https://www.anthropic.com/engineering/building-effective-agents
 ---
 
 ## Diagram

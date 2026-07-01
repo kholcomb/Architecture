@@ -5,7 +5,7 @@ also-known-as: [Dark Launch, Shadow Testing, Mirror Testing]
 tags: [validation, risk-reduction, traffic-mirroring, production-testing]
 parent: deployment
 related: [canary-release, blue-green, feature-flags]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Shadow-Deployment
+source: https://istio.io/latest/docs/tasks/traffic-management/mirroring/
 ---
 
 ## Diagram

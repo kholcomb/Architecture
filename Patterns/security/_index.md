@@ -4,7 +4,7 @@ category: security
 also-known-as: [Security Architecture Patterns]
 tags: [trust, authorization, isolation, identity, access-control]
 related: [resilience, operational/deployment/feature-flags]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Security
+source: https://owasp.org/www-project-application-security-verification-standard/
 ---
 
 ## Diagram

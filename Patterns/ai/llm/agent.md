@@ -5,7 +5,7 @@ also-known-as: [AI Agent, Autonomous Agent, ReAct Agent]
 tags: [agent, autonomy, tool-use, planning, reasoning, loop]
 parent: llm
 related: [tool-use, multi-agent, human-in-the-loop, prompt-chaining, saga]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Agent
+source: https://www.anthropic.com/engineering/building-effective-agents
 ---
 
 ## Diagram

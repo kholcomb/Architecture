@@ -5,7 +5,7 @@ also-known-as: [Bulkhead Pattern, Resource Isolation]
 tags: [fault-isolation, resource-pools, availability, blast-radius]
 parent: resilience
 related: [circuit-breaker, fallback, cells]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Bulkhead
+source: https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead
 ---
 
 ## Diagram

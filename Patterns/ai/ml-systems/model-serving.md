@@ -5,7 +5,7 @@ also-known-as: [Model Inference, Prediction Service, Inference Server]
 tags: [inference, serving, online-prediction, batch-prediction, latency]
 parent: ml-systems
 related: [model-registry, feature-store, canary-release, faas]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Model-Serving
+source: https://www.tensorflow.org/tfx/guide/serving
 ---
 
 ## Diagram

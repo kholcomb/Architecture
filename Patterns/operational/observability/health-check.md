@@ -5,7 +5,7 @@ also-known-as: [Liveness Probe, Readiness Probe, Health Endpoint]
 tags: [availability, orchestration, load-balancer, liveness, readiness]
 parent: observability
 related: [metrics-collection, log-aggregation, circuit-breaker]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Health-Check
+source: https://microservices.io/patterns/observability/health-check-api.html
 ---
 
 ## Diagram

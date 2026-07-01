@@ -5,7 +5,7 @@ also-known-as: [Isolated Execution, Secure Execution Environment]
 tags: [isolation, untrusted-code, blast-radius, containment, execution]
 parent: security
 related: [security-zones, bulkhead, cells]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Sandboxing
+source: https://en.wikipedia.org/wiki/Sandbox_(computer_security)
 ---
 
 ## Diagram

@@ -5,7 +5,7 @@ also-known-as: [Retry with Backoff, Exponential Backoff]
 tags: [transient-failure, fault-tolerance, backoff, jitter]
 parent: resilience
 related: [circuit-breaker, timeout, fallback]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Retry
+source: https://learn.microsoft.com/en-us/azure/architecture/patterns/retry
 ---
 
 ## Diagram

@@ -5,7 +5,7 @@ also-known-as: [Model Store, Model Repository, ML Model Registry]
 tags: [versioning, promotion, lineage, governance, mlops]
 parent: ml-systems
 related: [training-pipeline, model-serving, feature-store]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Model-Registry
+source: https://mlflow.org/docs/latest/model-registry.html
 ---
 
 ## Diagram

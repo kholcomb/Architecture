@@ -5,7 +5,7 @@ also-known-as: [Network Segmentation, Trust Zones, DMZ]
 tags: [segmentation, blast-radius, trust-boundary, isolation, dmz]
 parent: security
 related: [zero-trust, sandboxing, cells]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Security-Zones
+source: https://en.wikipedia.org/wiki/Network_segmentation
 ---
 
 ## Diagram

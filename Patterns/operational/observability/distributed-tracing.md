@@ -5,7 +5,7 @@ also-known-as: [Request Tracing, Distributed Request Tracing]
 tags: [tracing, latency, debugging, span, trace-id, correlation]
 parent: observability
 related: [log-aggregation, metrics-collection, service-mesh]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Distributed-Tracing
+source: https://opentelemetry.io/docs/concepts/signals/traces/
 ---
 
 ## Diagram

@@ -4,7 +4,7 @@ category: operational
 also-known-as: [Fault Tolerance, Stability Patterns]
 tags: [fault-tolerance, reliability, availability, degraded-mode, protection]
 related: [observability, deployment]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Resilience
+source: https://learn.microsoft.com/en-us/azure/architecture/patterns/category/resiliency
 ---
 
 ## Diagram

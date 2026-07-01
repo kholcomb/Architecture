@@ -5,7 +5,7 @@ also-known-as: [ML Pipeline, Model Training Pipeline]
 tags: [training, pipeline, reproducibility, automation, mlops]
 parent: ml-systems
 related: [feature-store, model-registry, pipeline]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Training-Pipeline
+source: https://www.tensorflow.org/tfx/guide
 ---
 
 ## Diagram

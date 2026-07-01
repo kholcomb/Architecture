@@ -5,7 +5,7 @@ also-known-as: [AI Memory, Persistent Context, Long-Term Memory]
 tags: [memory, context, persistence, recall, personalization, sessions]
 parent: llm
 related: [rag, agent, event-sourcing]
-source: https://github.com/denyspoltorak/metapatterns/wiki/AI-Memory
+source: https://www.anthropic.com/engineering/building-effective-agents
 ---
 
 ## Diagram

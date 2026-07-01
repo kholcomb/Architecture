@@ -5,7 +5,7 @@ also-known-as: [Feature Platform, Feature Repository]
 tags: [features, training-serving-skew, reuse, consistency, mlops]
 parent: ml-systems
 related: [training-pipeline, model-serving, shared-repository, materialized-view]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Feature-Store
+source: https://www.featurestore.org/
 ---
 
 ## Diagram

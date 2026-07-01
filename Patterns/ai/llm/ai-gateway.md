@@ -5,7 +5,7 @@ also-known-as: [LLM Gateway, Model Gateway, AI Proxy]
 tags: [gateway, routing, fallback, caching, rate-limiting, multi-provider]
 parent: llm
 related: [api-gateway, rate-limiting, circuit-breaker, fallback]
-source: https://github.com/denyspoltorak/metapatterns/wiki/AI-Gateway
+source: https://developers.cloudflare.com/ai-gateway/
 ---
 
 ## Diagram

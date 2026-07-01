@@ -5,7 +5,7 @@ also-known-as: [Centralized Logging, Log Management]
 tags: [logging, centralization, structured-logs, correlation, debugging]
 parent: observability
 related: [distributed-tracing, metrics-collection, health-check]
-source: https://github.com/denyspoltorak/metapatterns/wiki/Log-Aggregation
+source: https://microservices.io/patterns/observability/application-logging.html
 ---
 
 ## Diagram
