@@ -1,5 +1,6 @@
 ---
 name: Fail Secure
+description: When a security control fails, default to the most restrictive safe state (deny) rather than open access
 category: security
 also-known-as: [Fail Closed, Secure Default, Deny by Default]
 tags: [failure-mode, default-deny, authorization, safe-failure]

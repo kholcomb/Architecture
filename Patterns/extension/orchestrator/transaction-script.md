@@ -1,5 +1,6 @@
 ---
 name: Transaction Script
+description: Business logic is organized as a single procedural script per use case that runs through a series of steps from start to finish
 category: extension/orchestrator
 also-known-as: [Procedure Script, Use Case Script]
 tags: [procedural, simplicity, use-case, scripting, business-logic]

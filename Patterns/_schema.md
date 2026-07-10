@@ -1,5 +1,7 @@
 # Architecture Pattern Knowledge Base — Schema
 
+> This segment follows the shared registry spec in [`../../SCHEMA.md`](../../SCHEMA.md) (frontmatter incl. the one-line `description:` field, body sections, INDEX.md generation, `docs/PATTERNS.md` project binding). This file covers only what is specific to the Architecture segment.
+
 ## Purpose
 
 Normalized descriptions of software architecture patterns from [metapatterns.io](https://metapatterns.io/). Consumed by the ADR-generating skill to produce contextually grounded MADRs.
@@ -26,6 +28,7 @@ Categories: `basic`, `extension`, `fragmented`, `implementation`, `operational`,
 ```yaml
 ---
 name: {Display Name}
+description: {one line — what it is + when it fits; feeds generated INDEX.md}
 category: {category/subcategory}    # e.g. extension/proxy
 also-known-as: []                   # empty list if no aliases
 tags: []                            # searchable keywords

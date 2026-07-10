@@ -1,9 +1,10 @@
 ---
 name: Layers
+description: Organizes a system into horizontal tiers of abstraction — one component per level of abstractness
 category: basic
 also-known-as: [Layered Architecture, Multitier Architecture, N-tier Architecture]
 tags: [abstraction, separation-of-concerns, horizontal-tiers, specialization]
-related: [monolith, services, hexagonal, pipeline]
+related: [monolith, services, hexagonal-architecture, pipeline]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Layers
 ---
 

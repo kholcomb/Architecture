@@ -1,5 +1,6 @@
 ---
 name: Adapter
+description: Converts one component's interface to what another expects, letting incompatible components work together unmodified
 category: extension/proxy
 also-known-as: [Wrapper, Translator, Interface Adapter]
 tags: [interface, compatibility, translation, integration, structural]

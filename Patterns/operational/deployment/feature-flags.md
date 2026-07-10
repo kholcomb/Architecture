@@ -1,5 +1,6 @@
 ---
 name: Feature Flags
+description: Wraps new or experimental code paths behind a conditional check against a runtime configuration value
 category: operational/deployment
 also-known-as: [Feature Toggles, Feature Switches, Feature Gates]
 tags: [progressive-delivery, trunk-based-development, dark-launch, kill-switch]

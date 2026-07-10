@@ -1,9 +1,10 @@
 ---
 name: Security
+description: A family of architectural patterns for structuring how trust is established, how authorization is enforced, and how systems behave when security controls fail
 category: security
 also-known-as: [Security Architecture Patterns]
 tags: [trust, authorization, isolation, identity, access-control]
-related: [resilience, operational/deployment/feature-flags]
+related: [resilience, feature-flags]
 source: https://owasp.org/www-project-application-security-verification-standard/
 ---
 

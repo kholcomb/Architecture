@@ -1,5 +1,6 @@
 ---
 name: Sidecar
+description: Helper container/process co-deployed with a service adding logging, config, secrets, or local proxying without code changes
 category: extension/proxy
 also-known-as: [Sidekick, Decomposed Container]
 tags: [sidecar, co-deployment, cross-cutting, container, extensibility]

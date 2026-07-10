@@ -1,5 +1,6 @@
 ---
 name: Plugins
+description: The Plugin metapattern allows a core system to be extended with additional functionality at runtime or build time without modifying the core
 category: implementation
 also-known-as: [Extension Points, Add-ons]
 tags: [extensibility, runtime-extension, interface, discovery, modularity]

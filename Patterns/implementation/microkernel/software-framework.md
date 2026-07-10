@@ -1,5 +1,6 @@
 ---
 name: Software Framework
+description: A Software Framework is a reusable, extensible application skeleton that provides inversion of control: the framework calls user code rather than the reverse
 category: implementation/microkernel
 also-known-as: [Application Framework, Inversion of Control Framework]
 tags: [inversion-of-control, extensibility, hooks, callbacks, reusability]

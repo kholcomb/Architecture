@@ -1,5 +1,6 @@
 ---
 name: Stateless Pool
+description: Identical stateless instances behind a load balancer; any instance handles any request since no request-local state is kept
 category: basic/shards
 also-known-as: [Horizontal Pod Autoscaling, Replicated Services, Shared-Nothing Pool]
 tags: [stateless, horizontal-scaling, load-balancing, resilience, elasticity]

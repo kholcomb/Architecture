@@ -1,10 +1,11 @@
 ---
 name: Work Queue
+description: A pool of identical worker instances pulls tasks from a shared, durable queue
 category: basic/shards
 also-known-as: [Task Queue, Job Queue, Consumer Pool]
 tags: [async, backpressure, durability, horizontal-scaling, decoupling]
 parent: shards
-related: [stateless-pool, lambdas, partitions, pub-sub]
+related: [stateless-pool, lambdas, partitions]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shards
 ---
 

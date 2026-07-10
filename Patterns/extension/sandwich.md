@@ -1,5 +1,6 @@
 ---
 name: Sandwich
+description: Shared infrastructure layer between two service layers — presentation/API services on top, data/domain services below
 category: extension
 also-known-as: [Three-Tier Architecture, Layered Sandwich]
 tags: [layers, infrastructure, separation-of-concerns, tiered, fragmented]

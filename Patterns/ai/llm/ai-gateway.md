@@ -1,5 +1,6 @@
 ---
 name: AI Gateway
+description: Proxy between apps and LLM providers centralizing routing, caching, rate limits, provider fallback, cost tracking, and observability
 category: ai/llm
 also-known-as: [LLM Gateway, Model Gateway, AI Proxy]
 tags: [gateway, routing, fallback, caching, rate-limiting, multi-provider]

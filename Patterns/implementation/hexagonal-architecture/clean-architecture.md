@@ -1,5 +1,6 @@
 ---
 name: Clean Architecture
+description: Concentric rings — Entities, Use Cases, Interface Adapters, Frameworks — with a strict inward-only dependency rule
 category: implementation/hexagonal-architecture
 also-known-as: [Uncle Bob's Architecture]
 tags: [dependency-inversion, testability, domain-isolation, ports-adapters]

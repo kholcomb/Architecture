@@ -1,5 +1,6 @@
 ---
 name: Layered Services
+description: Combines Layers and Services — independent services, each internally structured into horizontal layers
 category: fragmented
 also-known-as: []
 tags: [layered, services, decomposition, separation-of-concerns, modularity]

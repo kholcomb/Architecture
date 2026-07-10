@@ -1,5 +1,6 @@
 ---
 name: CQRS View Database
+description: A CQRS View Database is a dedicated read-optimized datastore (or schema) maintained as a projection of the command-side's events or state changes
 category: fragmented/polyglot-persistence
 also-known-as: [Read Model Store, Query Projection Store]
 tags: [cqrs, read-model, projection, eventual-consistency, query-optimization]

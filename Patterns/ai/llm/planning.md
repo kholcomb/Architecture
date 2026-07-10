@@ -1,5 +1,6 @@
 ---
 name: Planning
+description: Model produces an explicit step decomposition of a goal, then executes it, interleaving reasoning with action (ReAct)
 category: ai/llm
 also-known-as: [Plan-and-Execute, ReAct, Plan-and-Solve, Reason-and-Act]
 tags: [planning, reasoning, decomposition, react, autonomy, workflow]

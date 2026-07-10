@@ -1,5 +1,6 @@
 ---
 name: Persistent Event Log
+description: An append-only, ordered log of events that retains all events durably for a configurable retention period (or indefinitely)
 category: extension/middleware
 also-known-as: [Event Store, Commit Log, Immutable Log]
 tags: [event-sourcing, append-only, replay, durability, streaming]

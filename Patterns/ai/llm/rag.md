@@ -1,5 +1,6 @@
 ---
 name: Retrieval-Augmented Generation
+description: Augments an LLM's generation with documents retrieved at query time from an external knowledge store
 category: ai/llm
 also-known-as: [RAG, Grounded Generation]
 tags: [rag, retrieval, vector-search, grounding, knowledge-base, context]

@@ -1,5 +1,6 @@
 ---
 name: Rate Limiting
+description: Enforces an upper bound on the rate of requests a client or workload class may make within a time window
 category: operational/resilience
 also-known-as: [Throttling, Traffic Shaping]
 tags: [capacity-protection, fairness, overload, token-bucket, leaky-bucket]

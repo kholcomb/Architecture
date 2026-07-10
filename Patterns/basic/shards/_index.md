@@ -1,5 +1,6 @@
 ---
 name: Shards
+description: Multiple functionally identical subsystems with little or no intercommunication
 category: basic
 also-known-as: [Instances, Replicas]
 tags: [scalability, replication, stateless, fault-tolerance, horizontal-scaling]

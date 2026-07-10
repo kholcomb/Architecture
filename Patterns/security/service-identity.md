@@ -1,5 +1,6 @@
 ---
 name: Service Identity
+description: Gives each workload a cryptographically verifiable identity so services authenticate each other rather than trusting the network
 category: security
 also-known-as: [Workload Identity, Mutual TLS, mTLS, SPIFFE Identity]
 tags: [authentication, service-to-service, mtls, workload-identity, zero-trust, spiffe]

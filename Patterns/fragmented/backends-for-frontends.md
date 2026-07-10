@@ -1,5 +1,6 @@
 ---
 name: Backends for Frontends
+description: A dedicated backend per client type (web, mobile, TV) instead of one general-purpose API for all clients
 category: fragmented
 also-known-as: []
 tags: [bff, api-gateway, client-specific, aggregation, frontend]

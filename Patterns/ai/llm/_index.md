@@ -1,9 +1,10 @@
 ---
 name: LLM Applications
+description: A family of patterns for structuring applications built on top of large language models
 category: ai
 also-known-as: [Generative AI Patterns, Foundation Model Patterns]
 tags: [llm, generative-ai, agents, rag, prompt, context, tool-use]
-related: [ml-systems, extension/proxy/api-gateway, extension/orchestrator]
+related: [ml-systems, api-gateway, orchestrator]
 source: https://www.anthropic.com/engineering/building-effective-agents
 ---
 

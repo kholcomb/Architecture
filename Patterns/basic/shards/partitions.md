@@ -1,10 +1,11 @@
 ---
 name: Partitions
+description: Data is divided into non-overlapping horizontal slices distributed across multiple nodes
 category: basic/shards
 also-known-as: [Horizontal Sharding, Range Sharding, Hash Sharding, Data Sharding]
 tags: [data-sharding, scalability, key-range, distributed-data, horizontal-partitioning]
 parent: shards
-related: [cells, stateless-pool, multitenancy, consistent-hashing]
+related: [cells, stateless-pool, multitenancy]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shards
 ---
 

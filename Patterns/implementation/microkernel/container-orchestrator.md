@@ -1,5 +1,6 @@
 ---
 name: Container Orchestrator
+description: Microkernel managing containerized workload lifecycle: scheduling, scaling, networking, storage, restarting failed instances
 category: implementation/microkernel
 also-known-as: [Workload Orchestrator, Container Scheduler]
 tags: [orchestration, containers, scheduling, lifecycle-management, scalability]

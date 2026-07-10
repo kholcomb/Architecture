@@ -1,5 +1,6 @@
 ---
 name: Feature Store
+description: A centralized system for computing, storing, and serving machine learning features consistently across training and inference
 category: ai/ml-systems
 also-known-as: [Feature Platform, Feature Repository]
 tags: [features, training-serving-skew, reuse, consistency, mlops]

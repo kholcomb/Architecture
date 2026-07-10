@@ -1,5 +1,6 @@
 ---
 name: Mesh
+description: The Mesh pattern organizes all nodes in a system as peers that can communicate directly with any other node without routing through a central coordinator
 category: implementation
 also-known-as: [Peer-to-Peer Network, Distributed Grid]
 tags: [peer-to-peer, decentralized, distributed, resilience, scalability]

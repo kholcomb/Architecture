@@ -1,5 +1,6 @@
 ---
 name: Facade
+description: A simplified interface to a complex subsystem
 category: extension/orchestrator
 also-known-as: [Simplified Interface, Subsystem Interface]
 tags: [simplification, abstraction, interface, subsystem, encapsulation]

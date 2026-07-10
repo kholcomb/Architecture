@@ -1,5 +1,6 @@
 ---
 name: Orchestrator
+description: A central coordinator that knows the steps of a workflow and explicitly calls each participant service in the correct sequence
 category: extension
 also-known-as: [Coordinator, Process Manager, Workflow Engine]
 tags: [workflow, coordination, control-flow, distributed, saga]

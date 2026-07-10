@@ -1,5 +1,6 @@
 ---
 name: Cell-Based Architecture
+description: Cell-Based Architecture organizes services into self-contained, independently deployable cells
 category: fragmented/hierarchy
 also-known-as: [Cell Architecture, Bulkhead Architecture]
 tags: [cells, fault-isolation, scalability, routing, resilience]

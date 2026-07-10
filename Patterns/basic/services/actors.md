@@ -1,5 +1,6 @@
 ---
 name: Actors
+description: Each service (or fine-grained unit of logic) is modeled as an actor: an independent entity with its own private state and a message inbox
 category: basic/services
 also-known-as: [Actor Model, Actor-Based Services, Virtual Actors]
 tags: [async, message-passing, isolation, concurrency, no-shared-state, distributed]

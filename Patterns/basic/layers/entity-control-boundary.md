@@ -1,5 +1,6 @@
 ---
 name: Entity-Control-Boundary
+description: Three object roles: Entity (domain data), Control (use-case coordination), Boundary (interfaces to external actors)
 category: basic/layers
 also-known-as: [ECB, EBC, Boundary-Control-Entity, BCE]
 tags: [use-case, roles, entity, control, boundary, object-oriented, enterprise, embedded]

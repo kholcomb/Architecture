@@ -1,5 +1,6 @@
 ---
 name: Cache-Aside
+description: Application code checks the cache first before reading from the database
 category: fragmented/polyglot-persistence
 also-known-as: [Lazy Loading Cache]
 tags: [caching, lazy-loading, read-performance, resilience]

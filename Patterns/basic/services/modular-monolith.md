@@ -1,5 +1,6 @@
 ---
 name: Modular Monolith
+description: A single-deployable application partitioned into well-defined modules that expose explicit public APIs while hiding internal implementation
 category: basic/services
 also-known-as: [Structured Monolith, Majestic Monolith]
 tags: [monolith, modules, encapsulation, single-deployable, explicit-api, enforced-boundaries]

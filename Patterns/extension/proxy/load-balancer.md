@@ -1,5 +1,6 @@
 ---
 name: Load Balancer
+description: A proxy that distributes incoming requests across a pool of backend instances using a configured algorithm (round-robin, least-connections, IP hash, etc.)
 category: extension/proxy
 also-known-as: [Traffic Distributor, Layer 4/7 Balancer]
 tags: [scalability, availability, distribution, failover, traffic]

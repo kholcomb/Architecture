@@ -1,5 +1,6 @@
 ---
 name: Hexagonal Architecture
+description: Hexagonal Architecture, also known as Ports and Adapters, structures an application so that the domain core is completely isolated from external dependencies
 category: implementation
 also-known-as: [Ports and Adapters]
 tags: [ports-adapters, testability, domain-isolation, infrastructure, decoupling]

@@ -1,5 +1,6 @@
 ---
 name: Microkernel
+description: The Microkernel pattern organizes a system around a minimal, stable core that provides only the essential services needed to load and coordinate plug-in modules
 category: implementation
 also-known-as: [Plugin Architecture]
 tags: [extensibility, modularity, plug-in, minimal-core, flexibility]

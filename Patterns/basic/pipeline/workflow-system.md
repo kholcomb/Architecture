@@ -1,5 +1,6 @@
 ---
 name: Workflow System
+description: Long-running, multi-step business processes are modeled as explicit, persisted workflows
 category: basic/pipeline
 also-known-as: [Business Process Management, BPM, Durable Execution, Orchestration Engine]
 tags: [workflow, orchestration, long-running, durable, human-tasks, approval, state-machine, bpm]

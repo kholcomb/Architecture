@@ -1,5 +1,6 @@
 ---
 name: Security Zones
+description: Divides a system into distinct areas with explicitly defined trust levels and controlled communication paths between them
 category: security
 also-known-as: [Network Segmentation, Trust Zones, DMZ]
 tags: [segmentation, blast-radius, trust-boundary, isolation, dmz]

@@ -1,5 +1,6 @@
 ---
 name: Fallback
+description: Returns an alternative response when the primary path fails — cached data, a default, or reduced functionality instead of an error
 category: operational/resilience
 also-known-as: [Graceful Degradation, Default Response]
 tags: [degraded-mode, availability, user-experience, fault-tolerance]

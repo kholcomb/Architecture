@@ -1,5 +1,6 @@
 ---
 name: Anticorruption Layer
+description: A translation layer that insulates a clean domain model from a legacy or external system's messy, inconsistent, or semantically incompatible model
 category: extension/proxy
 also-known-as: [ACL, Translation Layer, Integration Facade]
 tags: [ddd, translation, isolation, legacy, domain-model]

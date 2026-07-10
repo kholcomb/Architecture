@@ -1,5 +1,6 @@
 ---
 name: Service-Oriented Architecture
+description: Service-Oriented Architecture (SOA) is an architectural style in which software components are published, discovered, and consumed as services
 category: fragmented
 also-known-as: []
 tags: [soa, services, loose-coupling, interoperability, enterprise]

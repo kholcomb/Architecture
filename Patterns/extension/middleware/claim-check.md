@@ -1,5 +1,6 @@
 ---
 name: Claim-Check
+description: Splits a large message so the bulk payload is stored externally and only a small reference (the claim check) travels through the messaging system
 category: extension/middleware
 also-known-as: [Reference Message, Payload Offloading, Claim Check Token]
 tags: [messaging, payload, offloading, storage, performance, decoupling]

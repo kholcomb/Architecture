@@ -1,5 +1,6 @@
 ---
 name: Materialized View
+description: A Materialized View is a pre-computed, stored query result that is refreshed when the underlying source data changes
 category: fragmented/polyglot-persistence
 also-known-as: [Precomputed View, Persistent Query Result]
 tags: [precomputed, query-performance, caching, consistency, aggregation]

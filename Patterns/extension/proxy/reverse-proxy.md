@@ -1,5 +1,6 @@
 ---
 name: Reverse Proxy
+description: A proxy that sits in front of one or more backend servers and forwards client requests to them
 category: extension/proxy
 also-known-as: [Ingress Proxy, Frontend Proxy]
 tags: [ingress, ssl-termination, routing, infrastructure, transparency]

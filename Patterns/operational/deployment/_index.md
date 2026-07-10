@@ -1,5 +1,6 @@
 ---
 name: Deployment
+description: A family of patterns for releasing changes to production systems safely, incrementally, and with controlled blast radius
 category: operational
 also-known-as: [Release Strategies, Progressive Delivery]
 tags: [release, rollout, rollback, progressive-delivery, risk-reduction]

@@ -1,5 +1,6 @@
 ---
 name: Timeout
+description: Places an upper bound on how long a call to a downstream component is allowed to take
 category: operational/resilience
 also-known-as: [Request Timeout, Deadline]
 tags: [latency, fail-fast, resource-release, availability]

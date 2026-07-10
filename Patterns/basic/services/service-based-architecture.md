@@ -1,5 +1,6 @@
 ---
 name: Service-Based Architecture
+description: Decomposes the system into a small number of independently deployable, coarse-grained services — typically four to twelve — that often share a common database
 category: basic/services
 also-known-as: [Coarse-Grained Services, Domain Services Architecture]
 tags: [services, coarse-grained, shared-database, independent-deployment, pragmatic-decomposition]

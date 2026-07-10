@@ -1,5 +1,6 @@
 ---
 name: Autoscaling
+description: Adjusts the number of running instances automatically in response to load, adding capacity when demand rises and removing it when demand falls
 category: basic/shards
 also-known-as: [Elastic Scaling, Auto-Scaling, Horizontal Elasticity]
 tags: [elasticity, horizontal-scaling, capacity, cost, stateless, resilience]

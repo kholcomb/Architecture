@@ -1,5 +1,6 @@
 ---
 name: Onion Architecture
+description: Concentric layers — Domain Model, Domain Services, Application Services, Infrastructure/UI — with inward-only dependencies
 category: implementation/hexagonal-architecture
 also-known-as: [Layered Domain Architecture]
 tags: [dependency-inversion, domain-isolation, layering, testability, ports-adapters]

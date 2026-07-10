@@ -1,5 +1,6 @@
 ---
 name: Retry
+description: Automatically re-attempts a failed request after a delay, on the assumption that the failure is transient
 category: operational/resilience
 also-known-as: [Retry with Backoff, Exponential Backoff]
 tags: [transient-failure, fault-tolerance, backoff, jitter]

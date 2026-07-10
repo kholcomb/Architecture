@@ -1,5 +1,6 @@
 ---
 name: Enterprise Service Bus
+description: A centralized middleware platform that provides message routing, data transformation, protocol mediation, and orchestration across enterprise systems
 category: extension/middleware
 also-known-as: [ESB, Integration Bus, Message-Oriented Middleware]
 tags: [integration, transformation, orchestration, protocol-mediation, enterprise]

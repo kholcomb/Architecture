@@ -1,5 +1,6 @@
 ---
 name: Proxy
+description: An intermediary between client and component that forwards requests, optionally adding routing, caching, auth, or observability
 category: extension
 also-known-as: [Intermediary, Gateway, Facade]
 tags: [proxy, routing, cross-cutting, interception, transparency]

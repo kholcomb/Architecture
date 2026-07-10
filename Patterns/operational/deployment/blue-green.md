@@ -1,5 +1,6 @@
 ---
 name: Blue/Green Deployment
+description: Maintains two identical production environments — Blue (currently live) and Green (new version staged)
 category: operational/deployment
 also-known-as: [Blue-Green Deployment, Red-Black Deployment]
 tags: [zero-downtime, rollback, parallel-environments, cutover]

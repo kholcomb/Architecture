@@ -1,5 +1,6 @@
 ---
 name: MapReduce
+description: Orchestrator distributes work across nodes (Map: independent per-partition work) then aggregates results (Reduce)
 category: extension/orchestrator
 also-known-as: [Map-Reduce, Scatter-Gather, Parallel Aggregation]
 tags: [parallel, distributed, data-processing, batch, aggregation]

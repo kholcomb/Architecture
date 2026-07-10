@@ -1,5 +1,6 @@
 ---
 name: Domain-Specific Language
+description: A Domain-Specific Language is a specialized mini-language tailored to a narrow problem domain
 category: implementation/microkernel
 also-known-as: [DSL, Mini-Language, Little Language]
 tags: [dsl, expressiveness, domain-modeling, abstraction, language]

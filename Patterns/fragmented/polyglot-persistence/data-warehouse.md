@@ -1,5 +1,6 @@
 ---
 name: Data Warehouse
+description: A Data Warehouse is a central repository of integrated data from multiple operational sources, optimized for analytical queries (OLAP)
 category: fragmented/polyglot-persistence
 also-known-as: [Enterprise Data Warehouse, EDW]
 tags: [analytics, olap, etl, reporting, schema-on-write]

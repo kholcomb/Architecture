@@ -1,5 +1,6 @@
 ---
 name: Queue-Based Load Leveling
+description: Places a queue between producers and a consuming service so the consumer processes work at its own steady rate regardless of how bursty the incoming load is
 category: extension/middleware
 also-known-as: [Load Leveling, Buffering Queue, Load Smoothing]
 tags: [messaging, buffering, load-leveling, decoupling, resilience, throughput]

@@ -1,5 +1,6 @@
 ---
 name: Function as a Service
+description: Each discrete unit of business logic is packaged as a stateless function deployed and billed independently
 category: basic/services
 also-known-as: [FaaS, Serverless Functions, Lambda Architecture]
 tags: [serverless, stateless, event-driven, auto-scaling, pay-per-use, cloud]

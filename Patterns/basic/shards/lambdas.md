@@ -1,5 +1,6 @@
 ---
 name: Lambdas
+description: Ephemeral single-use compute instances provisioned on demand, each executing exactly one task before being destroyed
 category: basic/shards
 also-known-as: [Functions as a Service, FaaS, Serverless Functions, Cloud Functions]
 tags: [serverless, ephemeral, event-driven, per-invocation, elasticity]

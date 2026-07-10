@@ -1,5 +1,6 @@
 ---
 name: Message Broker
+description: A dedicated service that receives messages from producers, routes them to the correct consumers, and optionally persists them until delivery is confirmed
 category: extension/middleware
 also-known-as: [Message Queue, Event Bus, MQ]
 tags: [messaging, async, decoupling, routing, queuing]

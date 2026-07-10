@@ -1,5 +1,6 @@
 ---
 name: Routing
+description: Classifies an input and directs it to a specialized downstream handler — a dedicated prompt, model, or workflow tuned for that category
 category: ai/llm
 also-known-as: [Classifier-Router, Dispatch, Intent Routing]
 tags: [routing, classification, dispatch, specialization, workflow]

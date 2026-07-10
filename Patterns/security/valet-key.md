@@ -1,5 +1,6 @@
 ---
 name: Valet Key
+description: Issues a scoped, time-limited token granting direct restricted access to a resource, bypassing the application per request
 category: security
 also-known-as: [Scoped Access Token, Pre-Signed URL, Capability Token]
 tags: [authentication, authorization, delegation, scoped-access, tokens, least-privilege]

@@ -1,5 +1,6 @@
 ---
 name: Read Replicas
+description: Read Replicas are read-only copies of a primary database, kept in sync via continuous replication
 category: fragmented/polyglot-persistence
 also-known-as: [Read Replica, Secondary Replica, Follower]
 tags: [replication, scalability, read-performance, high-availability, eventual-consistency]

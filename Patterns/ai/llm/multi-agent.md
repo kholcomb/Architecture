@@ -1,5 +1,6 @@
 ---
 name: Multi-Agent
+description: Coordinates multiple specialized LLM agents to complete tasks that exceed the capability or context window of a single agent
 category: ai/llm
 also-known-as: [Multi-Agent System, Agent Network, Agent Swarm]
 tags: [multi-agent, orchestration, specialization, parallelism, coordination]

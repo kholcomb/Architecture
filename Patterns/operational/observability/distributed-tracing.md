@@ -1,5 +1,6 @@
 ---
 name: Distributed Tracing
+description: Propagates a unique trace identifier through every service call in a request's path, recording timing and metadata at each hop as a span
 category: operational/observability
 also-known-as: [Request Tracing, Distributed Request Tracing]
 tags: [tracing, latency, debugging, span, trace-id, correlation]

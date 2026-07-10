@@ -1,5 +1,6 @@
 ---
 name: Event Sourcing
+description: State is derived by replaying an append-only sequence of domain events rather than storing the current state directly
 category: fragmented/polyglot-persistence
 also-known-as: [Event Log, Append-Only Log]
 tags: [event-log, append-only, audit-trail, temporal, cqrs]

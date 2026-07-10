@@ -1,5 +1,6 @@
 ---
 name: Service Mesh
+description: Sidecar proxies alongside each service handle inter-service traffic: load balancing, retries, circuit breaking, mTLS, tracing
 category: extension/middleware
 also-known-as: [Sidecar Mesh, Data Plane / Control Plane]
 tags: [sidecar, observability, mtls, traffic-management, resilience]

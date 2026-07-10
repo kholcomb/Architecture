@@ -1,5 +1,6 @@
 ---
 name: Observability
+description: A family of patterns for gaining visibility into the internal state of a running distributed system through its external outputs — traces, logs, and metrics
 category: operational
 also-known-as: [Telemetry, Monitoring]
 tags: [visibility, telemetry, tracing, logging, metrics, debugging]

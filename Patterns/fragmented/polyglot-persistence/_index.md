@@ -1,5 +1,6 @@
 ---
 name: Polyglot Persistence
+description: Different data stores for different parts of the system, each chosen to fit that component's data shape and access patterns
 category: fragmented
 also-known-as: []
 tags: [multi-database, data-stores, heterogeneous, storage, scalability]

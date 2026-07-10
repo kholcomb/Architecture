@@ -1,5 +1,6 @@
 ---
 name: Model-View-Presenter
+description: Model-View-Presenter is a derivative of MVC in which the View is completely passive — it contains no logic, only renders what it is told
 category: implementation/hexagonal-architecture
 also-known-as: [MVP]
 tags: [ui-pattern, passive-view, testability, separation-of-concerns, presenter]

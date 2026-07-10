@@ -1,5 +1,6 @@
 ---
 name: Gateway Authentication
+description: Centralizes authentication at a gateway or edge component so individual services do not each implement it
 category: security
 also-known-as: [Authentication Offloading, Gateway Offloading, Edge Authentication]
 tags: [authentication, gateway, offloading, edge, centralization, cross-cutting]

@@ -1,5 +1,6 @@
 ---
 name: API Composer
+description: Aggregates responses from multiple downstream services into a single composed response for the client
 category: extension/orchestrator
 also-known-as: [Aggregator, BFF Aggregation, Response Composer]
 tags: [aggregation, fan-out, composition, client-optimization, orchestration]

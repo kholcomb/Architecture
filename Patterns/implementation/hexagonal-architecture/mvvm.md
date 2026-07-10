@@ -1,5 +1,6 @@
 ---
 name: Model-View-ViewModel
+description: Model-View-ViewModel is a UI architectural pattern derived from MVC for data-binding-heavy platforms
 category: implementation/hexagonal-architecture
 also-known-as: [MVVM, Model-View-Binder]
 tags: [data-binding, reactive, ui-pattern, testability, separation-of-concerns]

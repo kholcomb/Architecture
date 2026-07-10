@@ -1,5 +1,6 @@
 ---
 name: Strangler Fig
+description: Incrementally replaces a legacy system by routing migrated functionality through a facade while the legacy serves the rest
 category: operational/deployment
 also-known-as: [Strangler Application, Incremental Migration]
 tags: [legacy-migration, incremental-replacement, proxy, coexistence]

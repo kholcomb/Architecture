@@ -1,5 +1,6 @@
 ---
 name: Model Serving
+description: Loads a trained model and exposes it for inference — online (low-latency per request) or batch (bulk over a dataset)
 category: ai/ml-systems
 also-known-as: [Model Inference, Prediction Service, Inference Server]
 tags: [inference, serving, online-prediction, batch-prediction, latency]

@@ -1,5 +1,6 @@
 ---
 name: Federated Identity
+description: Delegates authentication to a trusted external identity provider rather than each application managing credentials itself
 category: security
 also-known-as: [Identity Federation, Single Sign-On, SSO, Delegated Authentication]
 tags: [authentication, identity, federation, sso, identity-provider, trust]

@@ -1,9 +1,10 @@
 ---
 name: ML Systems
+description: A family of patterns for the infrastructure that trains, tracks, and serves machine learning models
 category: ai
 also-known-as: [MLOps Patterns, Machine Learning Infrastructure Patterns]
 tags: [mlops, training, inference, feature-engineering, model-management]
-related: [llm, basic/pipeline, extension/shared-repository]
+related: [llm, pipeline, shared-repository]
 source: https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Presentation Layer
+description: Renders data in the format each consumer requires — HTML for browsers, JSON for API clients, XML for legacy integrations
 category: extension/proxy
 also-known-as: [View Layer, UI Layer, Rendering Layer]
 tags: [ui, rendering, separation-of-concerns, consumer-facing, transformation]

@@ -1,5 +1,6 @@
 ---
 name: Prompt Chaining
+description: Decomposes a complex task into a sequence of simpler LLM calls, where each call processes the output of the previous one
 category: ai/llm
 also-known-as: [LLM Chaining, Sequential Prompting, Chain-of-Thought Pipeline]
 tags: [chaining, pipeline, decomposition, sequential, workflow]

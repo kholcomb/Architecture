@@ -1,5 +1,6 @@
 ---
 name: Pipeline
+description: A system topology where data flows through a chain of processors — one component per step of data transformation
 category: basic
 also-known-as: [Pipes and Filters, Event-Driven Architecture, Stream Processing]
 tags: [sequential-processing, data-transformation, composability, stateless-steps]

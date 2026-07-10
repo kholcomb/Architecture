@@ -1,5 +1,6 @@
 ---
 name: Ambassador
+description: A specialized sidecar that acts as an outbound proxy for a service, handling all egress calls on that service's behalf
 category: extension/proxy
 also-known-as: [Outbound Proxy, Client-Side Proxy]
 tags: [sidecar, outbound, resilience, circuit-breaker, protocol-translation]

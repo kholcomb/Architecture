@@ -1,5 +1,6 @@
 ---
 name: Distributed Monolith
+description: An architecture that appears distributed (multiple deployed services) but retains the tight coupling of a monolith
 category: fragmented/service-oriented-architecture
 also-known-as: [Distributed Big Ball of Mud]
 tags: [anti-pattern, tight-coupling, distributed, fragile]

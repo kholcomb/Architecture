@@ -1,5 +1,6 @@
 ---
 name: API Gateway
+description: Single entry point in front of backend services handling auth, rate limiting, routing, SSL termination, and transformation
 category: extension/proxy
 also-known-as: [Edge Gateway, API Front Door]
 tags: [routing, auth, rate-limiting, ingress, aggregation]

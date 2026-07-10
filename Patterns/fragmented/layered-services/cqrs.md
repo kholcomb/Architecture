@@ -1,5 +1,6 @@
 ---
 name: CQRS
+description: Separates the write model (commands) from the read model (queries) into distinct components and optionally datastores
 category: fragmented/layered-services
 also-known-as: [Command Query Responsibility Segregation]
 tags: [read-write-separation, scalability, query-optimization, event-sourcing]

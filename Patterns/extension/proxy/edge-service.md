@@ -1,5 +1,6 @@
 ---
 name: Edge Service
+description: Proxy at the network edge (CDN PoP near users) serving content with minimal latency by avoiding origin round-trips
 category: extension/proxy
 also-known-as: [CDN Edge, Point of Presence, Edge Node]
 tags: [cdn, edge, latency, geographic, offloading]

@@ -1,5 +1,6 @@
 ---
 name: Space-Based Architecture
+description: Space-Based Architecture eliminates the database as a central bottleneck by distributing both processing and data across a grid of identical processing units
 category: implementation/mesh
 also-known-as: [Tuple Space Architecture, Cloud Architecture]
 tags: [scalability, in-memory-grid, distributed-data, elasticity, high-availability]

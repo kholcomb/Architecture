@@ -1,5 +1,6 @@
 ---
 name: Hierarchy
+description: Services organized into strict levels — upper layers delegate downward; lower layers never call upward
 category: fragmented
 also-known-as: []
 tags: [hierarchical, abstraction, delegation, layering, dependency-direction]

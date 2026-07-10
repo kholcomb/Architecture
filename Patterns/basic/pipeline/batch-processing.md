@@ -1,5 +1,6 @@
 ---
 name: Batch Processing
+description: Data is accumulated over a time interval and then processed as a discrete, bounded job
 category: basic/pipeline
 also-known-as: [Bulk Processing, Scheduled Jobs, ETL]
 tags: [batch, scheduled, high-throughput, etl, offline, periodic, bounded-data]

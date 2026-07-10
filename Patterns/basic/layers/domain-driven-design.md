@@ -1,5 +1,6 @@
 ---
 name: Domain-Driven Design
+description: Organizes code around the business domain with bounded contexts and a ubiquitous language shared with domain experts
 category: basic/layers
 also-known-as: [DDD, Domain Model Architecture]
 tags: [domain-model, bounded-context, ubiquitous-language, aggregates, value-objects, domain-events]

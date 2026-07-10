@@ -1,5 +1,6 @@
 ---
 name: Tool Use
+description: Provides the LLM with a set of typed function signatures it can invoke during generation
 category: ai/llm
 also-known-as: [Function Calling, Tool Calling]
 tags: [function-calling, tools, actions, integration, extensibility]

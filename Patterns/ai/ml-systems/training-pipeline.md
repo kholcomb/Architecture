@@ -1,5 +1,6 @@
 ---
 name: Training Pipeline
+description: An orchestrated, reproducible sequence of steps that transforms raw data into a trained, evaluated model artifact
 category: ai/ml-systems
 also-known-as: [ML Pipeline, Model Training Pipeline]
 tags: [training, pipeline, reproducibility, automation, mlops]

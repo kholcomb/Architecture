@@ -1,5 +1,6 @@
 ---
 name: Canary Release
+description: Gradually shifts a small percentage of production traffic to the new version while the majority continues on the stable version
 category: operational/deployment
 also-known-as: [Canary Deployment, Progressive Rollout]
 tags: [progressive-delivery, risk-reduction, traffic-splitting, rollout]

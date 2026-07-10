@@ -1,5 +1,6 @@
 ---
 name: Sandboxing
+description: Runs untrusted code in a constrained environment restricting filesystem, network, syscalls, and memory to a defined API surface
 category: security
 also-known-as: [Isolated Execution, Secure Execution Environment]
 tags: [isolation, untrusted-code, blast-radius, containment, execution]

@@ -1,5 +1,6 @@
 ---
 name: Zero Trust
+description: Eliminates implicit trust based on network location — no request is trusted because it originates from inside the corporate network or a "trusted" zone
 category: security
 also-known-as: [Zero Trust Architecture, Zero Trust Network, Never Trust Always Verify]
 tags: [trust, identity, authorization, network, least-privilege]

@@ -1,5 +1,6 @@
 ---
 name: Model-View-Controller
+description: Separates Model (data and rules), View (presentation), and Controller (input handling and coordination)
 category: implementation/hexagonal-architecture
 also-known-as: [MVC]
 tags: [separation-of-concerns, ui-pattern, web, desktop, request-response]

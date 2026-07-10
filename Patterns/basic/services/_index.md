@@ -1,5 +1,6 @@
 ---
 name: Services
+description: Divides a large codebase into independently deployable components, one per subdomain
 category: basic
 also-known-as: [Microservices, Service-Oriented Architecture, SOA]
 tags: [decoupling, subdomains, multi-team, independent-deployment, scalability]

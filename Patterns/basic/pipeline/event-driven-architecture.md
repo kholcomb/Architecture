@@ -1,5 +1,6 @@
 ---
 name: Event-Driven Architecture
+description: Components communicate by producing and consuming events through a broker, with no direct dependencies between producers and consumers
 category: basic/pipeline
 also-known-as: [EDA, Choreographed EDA, Event Collaboration]
 tags: [async, decoupling, choreography, event, loose-coupling]

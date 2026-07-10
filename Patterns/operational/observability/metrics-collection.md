@@ -1,5 +1,6 @@
 ---
 name: Metrics Collection
+description: Services emit numeric time-series measurements — rates, latencies, utilization — aggregated for dashboards and alerting
 category: operational/observability
 also-known-as: [Time-Series Metrics, Telemetry, Instrumentation]
 tags: [metrics, slo, alerting, time-series, RED, USE, golden-signals]

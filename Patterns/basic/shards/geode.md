@@ -1,5 +1,6 @@
 ---
 name: Geode
+description: Deploys a complete, independent copy of the workload (a "geode" — geographical node) to multiple regions, each able to serve any request
 category: basic/shards
 also-known-as: [Multi-Region Deployment, Active-Active Geo-Distribution, Geographical Nodes]
 tags: [geo-distribution, multi-region, availability, latency, active-active, resilience]

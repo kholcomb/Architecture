@@ -1,5 +1,6 @@
 ---
 name: Memory
+description: Persists information across sessions so the LLM can recall facts, preferences, and prior conversation context beyond what fits in a single context window
 category: ai/llm
 also-known-as: [AI Memory, Persistent Context, Long-Term Memory]
 tags: [memory, context, persistence, recall, personalization, sessions]

@@ -1,5 +1,6 @@
 ---
 name: Data Lake
+description: Centralized repository storing raw data in native format — structured or not — with no predefined schema at write time
 category: fragmented/polyglot-persistence
 also-known-as: [Data Reservoir]
 tags: [analytics, schema-on-read, raw-data, unstructured, exploratory]

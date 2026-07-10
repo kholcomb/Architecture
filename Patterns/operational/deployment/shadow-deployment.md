@@ -1,5 +1,6 @@
 ---
 name: Shadow Deployment
+description: Routes a copy of real production traffic to the new version in parallel with the primary version
 category: operational/deployment
 also-known-as: [Dark Launch, Shadow Testing, Mirror Testing]
 tags: [validation, risk-reduction, traffic-mirroring, production-testing]

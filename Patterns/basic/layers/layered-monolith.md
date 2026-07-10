@@ -1,5 +1,6 @@
 ---
 name: Layered Monolith
+description: A single-deployable application that enforces strict horizontal layer boundaries internally: typically Presentation, Application, Domain, and Infrastructure
 category: basic/layers
 also-known-as: [N-Tier Monolith, Onion Architecture (when domain-centric), Hexagonal Monolith]
 tags: [monolith, layers, single-deployable, separation-of-concerns, presentation, application, domain, infrastructure]

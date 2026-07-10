@@ -1,5 +1,6 @@
 ---
 name: Circuit Breaker
+description: Wraps calls to a downstream dependency in a state machine
 category: operational/resilience
 also-known-as: [Circuit Breaker Pattern]
 tags: [fault-tolerance, cascading-failure, self-healing, availability]

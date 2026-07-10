@@ -1,5 +1,6 @@
 ---
 name: Middleware
+description: An intermediary component between services that handles routing, transformation, and delivery of messages
 category: extension
 also-known-as: [Broker, Message Bus]
 tags: [async, decoupling, integration, broker, routing]

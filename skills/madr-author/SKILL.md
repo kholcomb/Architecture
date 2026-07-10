@@ -24,18 +24,17 @@ Ask for the following in a single message. Extract anything already stated in th
 
 ## Step 2 — Look up the chosen pattern
 
-Read the pattern file from the Architecture repo to get accurate `Pros and Cons` and `Evolutions` for populating the ADR:
+Read the pattern file from the local Patterns Registry to get accurate `Pros and Cons` and `Evolutions` for populating the ADR:
 
 ```bash
-# Explore the directory if you need to find the file path
-gh api repos/kholcomb/Architecture/contents/Patterns/basic/services
+# Find the file (INDEX.md lists every pattern with its path)
+grep -i "microservices" ~/Dev/Patterns_Registry/Architecture/Patterns/INDEX.md
 
-# Read the pattern file
-gh api repos/kholcomb/Architecture/contents/Patterns/basic/services/microservices.md \
-  --jq '.content' | base64 -d
+# Then Read the pattern file directly, e.g.
+# ~/Dev/Patterns_Registry/Architecture/Patterns/basic/services/microservices.md
 ```
 
-Fall back to `WebFetch` from metapatterns.io if the pattern isn't in the repo. Skip this step if the user has already provided sufficient detail about the trade-offs directly.
+If the local clone is missing, fall back to `gh api repos/kholcomb/Architecture/contents/...`; if the pattern isn't in the registry at all, `WebFetch` its source (e.g. metapatterns.io). Skip this step if the user has already provided sufficient detail about the trade-offs directly.
 
 ---
 
@@ -71,3 +70,25 @@ After saving, tell the user the file path and offer to:
 - Adjust any section based on their feedback
 - Link this ADR to related decisions (e.g., "Supersedes ADR-0003")
 - Add a row to `docs/decisions/README.md` if an index exists
+
+---
+
+## Step 5 — Record the adoption in `docs/PATTERNS.md`
+
+If the ADR's status is **accepted** and it adopts a registry pattern, update the project's adopted-patterns digest so future agent sessions follow the decision instead of re-deciding:
+
+1. Create `docs/PATTERNS.md` if missing, starting with `# Adopted Patterns`.
+2. Append one line per adopted pattern:
+
+   ```markdown
+   - [{slug}](~/Dev/Patterns_Registry/{segment}/Patterns/{path}) — {one sentence: how this pattern applies in THIS codebase, naming real directories/modules} — ADR-{NNNN}
+   ```
+
+3. If a new ADR supersedes an old one, update or remove the superseded line.
+4. If the project's `CLAUDE.md` doesn't yet reference the digest, offer to add:
+
+   ```markdown
+   Structural decisions: follow the adopted patterns in docs/PATTERNS.md.
+   ```
+
+For **proposed** ADRs, skip this step and mention it will apply once accepted.

@@ -1,10 +1,11 @@
 ---
 name: Multitenancy
+description: A single shared instance of the application and its infrastructure serves multiple tenants simultaneously
 category: basic/shards
 also-known-as: [Shared Infrastructure, Logical Isolation, SaaS Multitenancy]
 tags: [isolation, cost-efficiency, saas, logical-separation, shared-resources]
 parent: shards
-related: [cells, partitions, row-level-security, rbac]
+related: [cells, partitions]
 source: https://github.com/denyspoltorak/metapatterns/wiki/Shards
 ---
 

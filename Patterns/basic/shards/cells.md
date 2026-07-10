@@ -1,5 +1,6 @@
 ---
 name: Cells
+description: Each shard is a fully self-contained replica of the entire system stack — routing, logic, and data — serving a fixed partition of users or tenants
 category: basic/shards
 also-known-as: [Swim Lanes, Cell-Based Shards]
 tags: [isolation, blast-radius, resilience, multi-tenant, horizontal-scaling]

@@ -1,5 +1,6 @@
 ---
 name: Static Content Hosting
+description: Serves static assets — images, scripts, stylesheets, downloads — directly from a storage service or CDN edge instead of routing them through the application
 category: extension/proxy
 also-known-as: [CDN Offload, Static Asset Offloading, Edge Content Delivery]
 tags: [cdn, static-content, offloading, latency, performance, edge]

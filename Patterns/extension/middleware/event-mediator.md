@@ -1,5 +1,6 @@
 ---
 name: Event Mediator
+description: A central component that receives events and orchestrates a multi-step workflow by calling services in a defined sequence
 category: extension/middleware
 also-known-as: [Event Orchestrator, Workflow Mediator]
 tags: [events, orchestration, workflow, coordination, mediation]

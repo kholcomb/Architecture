@@ -1,5 +1,6 @@
 ---
 name: Macroservices
+description: Decomposes the system into two to five large services aligned to major business domains, each owning its data store and deployed independently
 category: basic/services
 also-known-as: [Coarse Services, Large-Grained Services]
 tags: [services, coarse-grained, independent-deployment, pragmatic, reduced-overhead]

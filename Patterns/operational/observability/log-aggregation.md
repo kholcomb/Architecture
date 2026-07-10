@@ -1,5 +1,6 @@
 ---
 name: Log Aggregation
+description: Collects log output from all service instances into a single queryable store, rather than leaving logs scattered across individual host filesystems
 category: operational/observability
 also-known-as: [Centralized Logging, Log Management]
 tags: [logging, centralization, structured-logs, correlation, debugging]

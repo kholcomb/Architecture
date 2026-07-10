@@ -1,5 +1,6 @@
 ---
 name: Saga
+description: Manages a long-running distributed transaction as a sequence of local transactions, where each step publishes an event or message that triggers the next step
 category: extension/orchestrator
 also-known-as: [Long-Running Transaction, Distributed Transaction, Process Manager]
 tags: [distributed-transactions, compensation, consistency, resilience, workflow]

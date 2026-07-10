@@ -1,5 +1,6 @@
 ---
 name: Pipes and Filters
+description: Decomposes processing into independent filter stages, each one transformation, passing results downstream via pipes
 category: basic/pipeline
 also-known-as: [Pipeline Pattern, Filter Chain]
 tags: [pipeline, composition, filters, transformation, unix-philosophy, reusable-stages]

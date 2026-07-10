@@ -1,5 +1,6 @@
 ---
 name: Monolith
+description: A single deployable unit with no architectural boundaries enforced between components
 category: basic
 also-known-as: [Monoblock]
 tags: [single-deployment, simplicity, rapid-development, co-location]

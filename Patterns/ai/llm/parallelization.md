@@ -1,5 +1,6 @@
 ---
 name: Parallelization
+description: Runs multiple LLM calls concurrently and aggregates their outputs
 category: ai/llm
 also-known-as: [Sectioning, Voting, Fan-Out/Fan-In, Scatter-Gather]
 tags: [parallelism, sectioning, voting, aggregation, concurrency, workflow]

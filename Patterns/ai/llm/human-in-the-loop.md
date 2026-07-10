@@ -1,5 +1,6 @@
 ---
 name: Human-in-the-Loop
+description: Inserts human review into an LLM workflow where stakes are too high for autonomy — irreversible, low-confidence, or regulated actions
 category: ai/llm
 also-known-as: [HITL, Human Oversight, Human Review Gate]
 tags: [oversight, review, approval, escalation, safety, confidence]

@@ -1,5 +1,6 @@
 ---
 name: Choreography
+description: Coordinates a workflow without a central controller — services react to and emit events; the process emerges from local reactions
 category: extension/orchestrator
 also-known-as: [Event Choreography, Decentralized Coordination, Reactive Coordination]
 tags: [choreography, events, decentralized, coordination, decoupling, workflow]

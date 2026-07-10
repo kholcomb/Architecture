@@ -1,5 +1,6 @@
 ---
 name: Three-Tier Architecture
+description: Structures an application into three horizontal layers: Presentation (UI), Business Logic (application/domain), and Data Access (persistence)
 category: basic/layers
 also-known-as: [Three-Layer Architecture, Client-Server-Database]
 tags: [web, separation-of-concerns, presentation, business-logic, persistence]

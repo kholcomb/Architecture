@@ -1,5 +1,6 @@
 ---
 name: Stream Processing
+description: Data is processed continuously as it arrives on an unbounded stream, with results produced in near real-time rather than after a full dataset is accumulated
 category: basic/pipeline
 also-known-as: [Real-Time Processing, Continuous Processing, Event Stream Processing]
 tags: [real-time, streaming, low-latency, stateful, unbounded-data, continuous-computation]

@@ -1,5 +1,6 @@
 ---
 name: Model Registry
+description: A versioned catalog of trained model artifacts along with their metadata — training metrics, data lineage, hyperparameters, and deployment history
 category: ai/ml-systems
 also-known-as: [Model Store, Model Repository, ML Model Registry]
 tags: [versioning, promotion, lineage, governance, mlops]

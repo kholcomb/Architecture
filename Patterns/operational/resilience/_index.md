@@ -1,5 +1,6 @@
 ---
 name: Resilience
+description: A family of patterns that protect a system's availability when downstream components fail or are overloaded
 category: operational
 also-known-as: [Fault Tolerance, Stability Patterns]
 tags: [fault-tolerance, reliability, availability, degraded-mode, protection]

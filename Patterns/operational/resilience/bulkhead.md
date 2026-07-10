@@ -1,5 +1,6 @@
 ---
 name: Bulkhead
+description: Divides a system's resources — threads, connections, memory — into isolated pools, one per downstream dependency or workload class
 category: operational/resilience
 also-known-as: [Bulkhead Pattern, Resource Isolation]
 tags: [fault-isolation, resource-pools, availability, blast-radius]

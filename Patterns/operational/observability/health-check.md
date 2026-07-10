@@ -1,5 +1,6 @@
 ---
 name: Health Check
+description: Exposes a dedicated endpoint that reports whether a service instance is alive and able to serve traffic
 category: operational/observability
 also-known-as: [Liveness Probe, Readiness Probe, Health Endpoint]
 tags: [availability, orchestration, load-balancer, liveness, readiness]

@@ -1,5 +1,6 @@
 ---
 name: Microservices
+description: The system is decomposed into small, independently deployable services, each owning its own data store and communicating over the network
 category: basic/services
 also-known-as: [Microservice Architecture]
 tags: [independent-deployment, distributed, scalability, bounded-context]

@@ -1,5 +1,6 @@
 ---
 name: Evaluator-Optimizer
+description: Pairs a generator that produces a candidate output with an evaluator that assesses it against criteria and returns actionable feedback
 category: ai/llm
 also-known-as: [Reflection, Generator-Critic, Self-Refine, Critique Loop]
 tags: [reflection, evaluation, iteration, self-critique, feedback, workflow]

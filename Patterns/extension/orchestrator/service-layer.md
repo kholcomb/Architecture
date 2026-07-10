@@ -1,5 +1,6 @@
 ---
 name: Service Layer
+description: A set of operations available to the application that defines the system's boundary and coordinates the application's response to each use case
 category: extension/orchestrator
 also-known-as: [Application Service Layer, Use Case Layer]
 tags: [application-layer, coordination, boundary, use-case, transactions]

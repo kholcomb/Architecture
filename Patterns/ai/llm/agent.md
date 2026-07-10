@@ -1,5 +1,6 @@
 ---
 name: Agent
+description: An LLM in a loop: reasons, calls tools, observes results, and iterates until it reaches an answer or stopping condition
 category: ai/llm
 also-known-as: [AI Agent, Autonomous Agent, ReAct Agent]
 tags: [agent, autonomy, tool-use, planning, reasoning, loop]

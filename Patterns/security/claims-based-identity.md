@@ -1,5 +1,6 @@
 ---
 name: Claims-Based Identity
+description: Represents identity as signed, portable claims about who the caller is and what they may do, issued by a trusted provider
 category: security
 also-known-as: [Token-Based Identity, Claims-Based Access Control]
 tags: [identity, authorization, tokens, portability, decentralization]

@@ -1,5 +1,6 @@
 ---
 name: Data Mesh
+description: Decentralizes data ownership by assigning each domain team responsibility for publishing its data as a versioned, discoverable, and interoperable data product
 category: basic/pipeline
 also-known-as: [Federated Data Architecture, Domain-Oriented Data Ownership]
 tags: [data-products, domain-ownership, federated-governance, decentralization, self-serve, analytical-data]

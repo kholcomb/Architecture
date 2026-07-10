@@ -1,5 +1,6 @@
 ---
 name: Actors
+description: Each actor is an independent, lightweight state machine that owns its private state and communicates exclusively via asynchronous messages
 category: basic/shards
 also-known-as: [Actor Model, Virtual Actors, Grains]
 tags: [isolation, concurrency, stateful, message-passing, distributed-state]

@@ -1,5 +1,6 @@
 ---
 name: Shared Repository
+description: A single shared datastore that multiple services read from and write to directly
 category: extension
 also-known-as: [Shared Database, Common Data Store]
 tags: [data, integration, coupling, consistency, persistence]

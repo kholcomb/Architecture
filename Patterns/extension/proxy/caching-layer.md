@@ -1,5 +1,6 @@
 ---
 name: Caching Layer
+description: A proxy that intercepts requests destined for a backend service and serves responses from a local cache when a valid cached entry exists
 category: extension/proxy
 also-known-as: [Cache Proxy, Read-Through Cache, HTTP Cache]
 tags: [caching, performance, read-throughput, latency, offloading]
